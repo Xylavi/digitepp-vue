@@ -1,0 +1,431 @@
+<script lang="js" setup>
+
+</script>
+
+<template>
+
+    <header>
+        <nav class="navbar navbar-expand-lg shadow-lg rounded-5 px-lg-4 mx-lg-5 mt-3 mt-lg-5 digi-gradient-bg">
+            <div class="container-fluid">
+                <a class="navbar-brand px-0" href="index.html">
+                    <img src="/images/svg/logo-digiTEPP.svg" alt="Digitepp" height="80">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#beranda"
+                    aria-controls="beranda" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="beranda">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 font-noto-sans-bold" style="font-size: 18px;">
+                        <li class="nav-item">
+                            <a class="nav-link py-3 px-4" href="index.html" aria-current="page">Beranda</a>
+                        </li>
+                        <li>
+                            <a class="nav-link py-3 px-4" href="#" aria-current="page">Fitur</a>
+                        </li>
+                        <li>
+                            <a class="nav-link py-3 px-4" href="#" aria-current="page">Login</a>
+                        </li>
+                        <li>
+                            <a class="nav-link py-3 px-4" href="#kontak" aria-current="page">Kontak</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <section class="m-3 m-lg-5">
+
+            <!-- Back Button -->
+            <router-link name="" id="" class="btn btn-primary my-5 bg-info-subtle border border-info digi-text-color-blue"
+                :to="{name: 'digitepp'}" role="button">
+                <i class="bi bi-arrow-left font-noto-sans-regular"> Kembali ke Beranda</i>
+            </router-link>
+
+            <div class="container text-center">
+
+
+                <!-- TESTIMONI -->
+
+
+                <div class="row my-3">
+                    <h2 class="font-dm-serif-text-regular">Testimoni</h2>
+                </div>
+
+                <div class="row row-cols-1 row-cols-lg-2 py-5 gy-5">
+
+                    <!--Testi 1-->
+
+                    <div class="col">
+                        <div class="p-5 rounded-4 text-bg-light shadow-lg">
+                            <div class="row mb-5">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Qui nisi dicta ipsum doloribus alias, a neque exercitationem
+                                    voluptates ex eligendi quae quidem aliquam architecto excepturi
+                                    veritatis illo recusandae, mollitia repudiandae.
+                                </p>
+                            </div>
+                            <div class="row row-cols-2">
+                                <div class="col-8">
+                                    <div class="row row-cols-1 row-cols-lg-2 text-center text-lg-start">
+                                        <div class="col col-lg-2">
+                                            <img src="/images/kep-terdaftar/dr-soedono.png" alt="DR.Soedono"
+                                                style="max-width: 50px;">
+                                        </div>
+                                        <div class="col col-lg-10">
+                                            <p class="m-0 digi-testimonial-author">Rudi Kurniawan</p>
+                                            <p class="m-0 font-noto-sans-bold">RSUD dr. Soedono Madiun</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 align-content-center">
+                                    <img class="position-absolute" src="/images/svg/quote.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Testi 2-->
+
+                    <div class="col">
+                        <div class="p-5 rounded-4 text-bg-light shadow-lg">
+                            <div class="row mb-5">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Qui nisi dicta ipsum doloribus alias, a neque exercitationem
+                                    voluptates ex eligendi quae quidem aliquam architecto excepturi
+                                    veritatis illo recusandae, mollitia repudiandae.
+                                </p>
+                            </div>
+                            <div class="row row-cols-2">
+                                <div class="col-8">
+                                    <div class="row row-cols-1 row-cols-lg-2 text-center text-lg-start">
+                                        <div class="col col-lg-2">
+                                            <img src="/images/kep-terdaftar/dr-soedono.png" alt="DR.Soedono"
+                                                style="max-width: 50px;">
+                                        </div>
+                                        <div class="col col-lg-10">
+                                            <p class="m-0 digi-testimonial-author">Rudi Kurniawan</p>
+                                            <p class="m-0 font-noto-sans-bold">RSUD dr. Soedono Madiun</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 align-content-center">
+                                    <img class="position-absolute" src="/images/svg/quote.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Testi 3-->
+
+                    <div class="col">
+                        <div class="p-5 rounded-4 text-bg-light shadow-lg">
+                            <div class="row mb-5">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Qui nisi dicta ipsum doloribus alias, a neque exercitationem
+                                    voluptates ex eligendi quae quidem aliquam architecto excepturi
+                                    veritatis illo recusandae, mollitia repudiandae.
+                                </p>
+                            </div>
+                            <div class="row row-cols-2">
+                                <div class="col-8">
+                                    <div class="row row-cols-1 row-cols-lg-2 text-center text-lg-start">
+                                        <div class="col col-lg-2">
+                                            <img src="/images/kep-terdaftar/dr-soedono.png" alt="DR.Soedono"
+                                                style="max-width: 50px;">
+                                        </div>
+                                        <div class="col col-lg-10">
+                                            <p class="m-0 digi-testimonial-author">Rudi Kurniawan</p>
+                                            <p class="m-0 font-noto-sans-bold">RSUD dr. Soedono Madiun</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 align-content-center">
+                                    <img class="position-absolute" src="/images/svg/quote.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Testi 4-->
+
+                    <div class="col">
+                        <div class="p-5 rounded-4 text-bg-light shadow-lg">
+                            <div class="row mb-5">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Qui nisi dicta ipsum doloribus alias, a neque exercitationem
+                                    voluptates ex eligendi quae quidem aliquam architecto excepturi
+                                    veritatis illo recusandae, mollitia repudiandae.
+                                </p>
+                            </div>
+                            <div class="row row-cols-2">
+                                <div class="col-8">
+                                    <div class="row row-cols-1 row-cols-lg-2 text-center text-lg-start">
+                                        <div class="col col-lg-2">
+                                            <img src="/images/kep-terdaftar/dr-soedono.png" alt="DR.Soedono"
+                                                style="max-width: 50px;">
+                                        </div>
+                                        <div class="col col-lg-10">
+                                            <p class="m-0 digi-testimonial-author">Rudi Kurniawan</p>
+                                            <p class="m-0 font-noto-sans-bold">RSUD dr. Soedono Madiun</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 align-content-center">
+                                    <img class="position-absolute" src="/images/svg/quote.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Testi 6-->
+
+                    <div class="col">
+                        <div class="p-5 rounded-4 text-bg-light shadow-lg">
+                            <div class="row mb-5">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Qui nisi dicta ipsum doloribus alias, a neque exercitationem
+                                    voluptates ex eligendi quae quidem aliquam architecto excepturi
+                                    veritatis illo recusandae, mollitia repudiandae.
+                                </p>
+                            </div>
+                            <div class="row row-cols-2">
+                                <div class="col-8">
+                                    <div class="row row-cols-1 row-cols-lg-2 text-center text-lg-start">
+                                        <div class="col col-lg-2">
+                                            <img src="/images/kep-terdaftar/dr-soedono.png" alt="DR.Soedono"
+                                                style="max-width: 50px;">
+                                        </div>
+                                        <div class="col col-lg-10">
+                                            <p class="m-0 digi-testimonial-author">Rudi Kurniawan</p>
+                                            <p class="m-0 font-noto-sans-bold">RSUD dr. Soedono Madiun</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 align-content-center">
+                                    <img class="position-absolute" src="/images/svg/quote.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Testi 6-->
+
+                    <div class="col">
+                        <div class="p-5 rounded-4 text-bg-light shadow-lg">
+                            <div class="row mb-5">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Qui nisi dicta ipsum doloribus alias, a neque exercitationem
+                                    voluptates ex eligendi quae quidem aliquam architecto excepturi
+                                    veritatis illo recusandae, mollitia repudiandae.
+                                </p>
+                            </div>
+                            <div class="row row-cols-2">
+                                <div class="col-8">
+                                    <div class="row row-cols-1 row-cols-lg-2 text-center text-lg-start">
+                                        <div class="col col-lg-2">
+                                            <img src="/images/kep-terdaftar/dr-soedono.png" alt="DR.Soedono"
+                                                style="max-width: 50px;">
+                                        </div>
+                                        <div class="col col-lg-10">
+                                            <p class="m-0 digi-testimonial-author">Rudi Kurniawan</p>
+                                            <p class="m-0 font-noto-sans-bold">RSUD dr. Soedono Madiun</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 align-content-center">
+                                    <img class="position-absolute" src="/images/svg/quote.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Testi 7-->
+
+                    <div class="col">
+                        <div class="p-5 rounded-4 text-bg-light shadow-lg">
+                            <div class="row mb-5">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Qui nisi dicta ipsum doloribus alias, a neque exercitationem
+                                    voluptates ex eligendi quae quidem aliquam architecto excepturi
+                                    veritatis illo recusandae, mollitia repudiandae.
+                                </p>
+                            </div>
+                            <div class="row row-cols-2">
+                                <div class="col-8">
+                                    <div class="row row-cols-1 row-cols-lg-2 text-center text-lg-start">
+                                        <div class="col col-lg-2">
+                                            <img src="/images/kep-terdaftar/dr-soedono.png" alt="DR.Soedono"
+                                                style="max-width: 50px;">
+                                        </div>
+                                        <div class="col col-lg-10">
+                                            <p class="m-0 digi-testimonial-author">Rudi Kurniawan</p>
+                                            <p class="m-0 font-noto-sans-bold">RSUD dr. Soedono Madiun</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 align-content-center">
+                                    <img class="position-absolute" src="/images/svg/quote.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Testi 8-->
+
+                    <div class="col">
+                        <div class="p-5 rounded-4 text-bg-light shadow-lg">
+                            <div class="row mb-5">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Qui nisi dicta ipsum doloribus alias, a neque exercitationem
+                                    voluptates ex eligendi quae quidem aliquam architecto excepturi
+                                    veritatis illo recusandae, mollitia repudiandae.
+                                </p>
+                            </div>
+                            <div class="row row-cols-2">
+                                <div class="col-8">
+                                    <div class="row row-cols-1 row-cols-lg-2 text-center text-lg-start">
+                                        <div class="col col-lg-2">
+                                            <img src="/images/kep-terdaftar/dr-soedono.png" alt="DR.Soedono"
+                                                style="max-width: 50px;">
+                                        </div>
+                                        <div class="col col-lg-10">
+                                            <p class="m-0 digi-testimonial-author">Rudi Kurniawan</p>
+                                            <p class="m-0 font-noto-sans-bold">RSUD dr. Soedono Madiun</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 align-content-center">
+                                    <img class="position-absolute" src="/images/svg/quote.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Testi 9-->
+
+                    <div class="col">
+                        <div class="p-5 rounded-4 text-bg-light shadow-lg">
+                            <div class="row mb-5">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Qui nisi dicta ipsum doloribus alias, a neque exercitationem
+                                    voluptates ex eligendi quae quidem aliquam architecto excepturi
+                                    veritatis illo recusandae, mollitia repudiandae.
+                                </p>
+                            </div>
+                            <div class="row row-cols-2">
+                                <div class="col-8">
+                                    <div class="row row-cols-1 row-cols-lg-2 text-center text-lg-start">
+                                        <div class="col col-lg-2">
+                                            <img src="/images/kep-terdaftar/dr-soedono.png" alt="DR.Soedono"
+                                                style="max-width: 50px;">
+                                        </div>
+                                        <div class="col col-lg-10">
+                                            <p class="m-0 digi-testimonial-author">Rudi Kurniawan</p>
+                                            <p class="m-0 font-noto-sans-bold">RSUD dr. Soedono Madiun</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 align-content-center">
+                                    <img class="position-absolute" src="/images/svg/quote.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Testi 10-->
+
+                    <div class="col">
+                        <div class="p-5 rounded-4 text-bg-light shadow-lg">
+                            <div class="row mb-5">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Qui nisi dicta ipsum doloribus alias, a neque exercitationem
+                                    voluptates ex eligendi quae quidem aliquam architecto excepturi
+                                    veritatis illo recusandae, mollitia repudiandae.
+                                </p>
+                            </div>
+                            <div class="row row-cols-2">
+                                <div class="col-8">
+                                    <div class="row row-cols-1 row-cols-lg-2 text-center text-lg-start">
+                                        <div class="col col-lg-2">
+                                            <img src="/images/kep-terdaftar/dr-soedono.png" alt="DR.Soedono"
+                                                style="max-width: 50px;">
+                                        </div>
+                                        <div class="col col-lg-10">
+                                            <p class="m-0 digi-testimonial-author">Rudi Kurniawan</p>
+                                            <p class="m-0 font-noto-sans-bold">RSUD dr. Soedono Madiun</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 align-content-center">
+                                    <img class="position-absolute" src="/images/svg/quote.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- PAGINATION -->
+
+
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-center">
+
+                        <li class="page-item">
+                            <a class="page-link px-3" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+
+                        <li class="page-item">
+                            <a class="page-link px-3" href="#">1</a>
+                        </li>
+
+                        <li class="page-item">
+                            <a class="page-link px-3" href="#">2</a>
+                        </li>
+
+                        <li class="page-item">
+                            <a class="page-link px-3" href="#">3</a>
+                        </li>
+
+                        <li class="page-item">
+                            <a class="page-link px-3" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div id="kontak" class="container-fluid text-center digi-gradient-bg py-3 pt-5">
+            <h2 class="my-3 my-lg-5 font-dm-serif-text-regular">Kontak</h2>
+            <div class="row py-3 py-lg-5 d-flex justify-content-center align-items-center">
+                <div class="col-md-4 my-3 my-lg-5">
+                    <img src="/images/keppin.png" alt="KEPPIN Logo" style="max-width: 215px;">
+                </div>
+                <div class="col-md-6 my-5 text-start">
+                    <h2 class="font-dm-serif-text-regular">KEPPIN</h2>
+                    <h5 class="font-dm-serif-text-regular" style="font-size: 26px;">(Komite Etik Penelitian dan
+                        Pelayanan Indonesia)</h5>
+                    <br>
+                    <p class="font-noto-sans-regular" style="font-size: 18px;">Sekretariat: Jalan Salemba Raya 5-5A,
+                        Menara Salemba Lt-7, 27, Jakarta Pusat, Indonesia
+                        0819-707-174 - 0813-9891-1956
+                        keppin.pusat@gmail.com</p>
+                </div>
+            </div>
+            <div class="my-5 rounded-5 shadow-lg">
+                <p class="mb-0 p-3 font-noto-sans-bold" style="font-size: 20px;">Dikembangkan oleh dinustek dan KEPPIN
+                    2025</p>
+            </div>
+        </div>
+    </footer>
+
+</template>

@@ -1,0 +1,267 @@
+<script lang="js" setup>
+
+</script>
+
+<template>
+
+    <!-- NAVBAR SECTION -->
+
+    <header>
+        <nav class="navbar navbar-expand-lg shadow-lg rounded-5 px-lg-4 mx-lg-5 mt-3 mt-lg-5 digi-gradient-bg">
+            <div class="container-fluid">
+                <a class="navbar-brand px-0" href="index.html">
+                    <img src="/images/svg/logo-digiTEPP.svg" alt="Digitepp" height="80">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#beranda"
+                    aria-controls="beranda" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="beranda">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 font-noto-sans-bold" style="font-size: 18px;">
+                        <li class="nav-item">
+                            <a class="nav-link py-3 px-4" href="index.html" aria-current="page">Beranda</a>
+                        </li>
+                        <li>
+                            <a class="nav-link py-3 px-4" href="#" aria-current="page">Fitur</a>
+                        </li>
+                        <li>
+                            <a class="nav-link py-3 px-4" href="#" aria-current="page">Login</a>
+                        </li>
+                        <li>
+                            <a class="nav-link py-3 px-4" href="#kontak" aria-current="page">Kontak</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+
+
+        <section class="m-3 m-lg-5">
+
+            <!-- Back Button -->
+            <router-link name="" id="" class="btn btn-primary my-5 bg-info-subtle border border-info digi-text-color-blue"
+                :to="{name: 'digitepp'}" role="button">
+                <i class="bi bi-arrow-left font-noto-sans-regular"> Kembali ke Beranda</i>
+            </router-link>
+
+            <div class="container text-center">
+
+
+                <!-- BERITA TERKINI SECTION -->
+
+
+                <h2 class="font-dm-serif-text-regular my-5 my-lg-5">Berita Terkini</h2>
+
+                <!-- Headline -->
+                <div class="row row-cols-1 justify-content-center">
+                    <div class="card digi-hdl-card-vw-high">
+                        <img class="card-img" src="/images/news/berita.png" alt="News">
+                        <div
+                            class="text-center text-lg-start d-flex align-items-end digi-headline-vw-high digi-headline-vw-low">
+                            <h3 class="card-title my-3 mx-0 my-lg-5 mx-lg-5 font-dm-serif-text-regular">KEPPIN
+                                Selenggarakan Pelatihan Etik Dasar Lanjut, GCRP, dan Pengenalan DigiTEPP
+                                secara Online dengan Peserta dari Berbagai Institusi</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Row Berita -->
+                <div class="row mx-0 mx-lg-0 row-cols-1 row-cols-lg-3 d-flex justify-content-center align-items-center">
+
+                    <!-- Berita 1 -->
+                    <div class="col p-3">
+                        <div class="row row-cols-2 row-cols-lg-1">
+                            <div class="col-4">
+                                <div class="row my-3 rounded-bottom-3 rounded-top-3">
+                                    <img src="/images/1x/news-placeholder.png" alt="Berita Terkini">
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="row text-start">
+                                    <router-link class="font-noto-sans-regular digi-berita-title text-decoration-none"
+                                        :to="{name: 'detailBerita'}">KEPPIN Selenggarakan Pelatihan Etik Dasar Lanjut,
+                                        GCRP,
+                                        dan Pengenalan DigiTEPP secara Online dengan Peserta dari Berbagai Institusi</router-link>
+                                    <p class="small text-secondary">Senin, 2 Desember 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Berita 2 -->
+                    <div class="col p-3">
+                        <div class="row row-cols-2 row-cols-lg-1">
+                            <div class="col-4">
+                                <div class="row my-3 rounded-bottom-3 rounded-top-3">
+                                    <img src="/images/1x/news-placeholder-2.png" alt="Berita Terkini">
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="row text-start">
+                                    <router-link class="font-noto-sans-regular digi-berita-title text-decoration-none"
+                                        :to="{name: 'detailBerita'}">RSPAD Gatot Soebroto dan KEPPIN Selenggarakan
+                                        Pelatihan
+                                        Etik Dasar Lanjut, GCRP, dan Pengenalan DigiTEPP secara Luring</router-link>
+                                    <p class="small text-secondary">Senin, 18 November 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Berita 3 -->
+                    <div class="col p-3">
+                        <div class="row row-cols-2 row-cols-lg-1">
+                            <div class="col-4">
+                                <div class="row my-3 rounded-bottom-3 rounded-top-3">
+                                    <img src="/images/1x/news-placeholder-3.png" alt="Berita Terkini">
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="row text-start">
+                                    <router-link class="font-noto-sans-regular digi-berita-title text-decoration-none"
+                                        :to="{name: 'detailBerita'}">KEPPIN Adakan Pelatihan Etik Dasar Lanjut, Good
+                                        Clinical
+                                        Research Protocol, dan Pengenalan Aplikasi DigiTEPP secara Daring</router-link>
+                                    <p class="small text-secondary">Senin, 11 November 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Berita 4 -->
+                    <div class="col p-3">
+                        <div class="row row-cols-2 row-cols-lg-1">
+                            <div class="col-4">
+                                <div class="row my-3 rounded-bottom-3 rounded-top-3">
+                                    <img src="/images/1x/news-placeholder.png" alt="Berita Terkini">
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="row text-start">
+                                    <router-link class="font-noto-sans-regular digi-berita-title text-decoration-none"
+                                        :to="{name: 'detailBerita'}">KEPPIN Selenggarakan Pelatihan Etik Dasar Lanjut,
+                                        GCRP,
+                                        dan Pengenalan DigiTEPP secara Online dengan Peserta dari Berbagai Institusi</router-link>
+                                    <p class="small text-secondary">Senin, 2 Desember 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Berita 5 -->
+                    <div class="col p-3">
+                        <div class="row row-cols-2 row-cols-lg-1">
+                            <div class="col-4">
+                                <div class="row my-3 rounded-bottom-3 rounded-top-3">
+                                    <img src="/images/1x/news-placeholder-2.png" alt="Berita Terkini">
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="row text-start">
+                                    <router-link class="font-noto-sans-regular digi-berita-title text-decoration-none"
+                                        :to="{name: 'detailBerita'}">RSPAD Gatot Soebroto dan KEPPIN Selenggarakan
+                                        Pelatihan
+                                        Etik Dasar Lanjut, GCRP, dan Pengenalan DigiTEPP secara Luring</router-link>
+                                    <p class="small text-secondary">Senin, 18 November 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Berita 6 -->
+                    <div class="col p-3">
+                        <div class="row row-cols-2 row-cols-lg-1">
+                            <div class="col-4">
+                                <div class="row my-3 rounded-bottom-3 rounded-top-3">
+                                    <img src="/images/1x/news-placeholder-3.png" alt="Berita Terkini">
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="row text-start">
+                                    <router-link class="font-noto-sans-regular digi-berita-title text-decoration-none"
+                                        :to="{name: 'detailBerita'}">KEPPIN Adakan Pelatihan Etik Dasar Lanjut, Good
+                                        Clinical
+                                        Research Protocol, dan Pengenalan Aplikasi DigiTEPP secara Daring</router-link>
+                                    <p class="small text-secondary">Senin, 11 November 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- PAGINATION -->
+
+
+                <nav class="my-3 my-lg-5" aria-label="Page navigation example">
+                    <ul class="pagination justify-content-center">
+
+                        <li class="page-item">
+                            <a class="page-link px-3" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+
+                        <li class="page-item">
+                            <a class="page-link px-3" href="#">1</a>
+                        </li>
+
+                        <li class="page-item">
+                            <a class="page-link px-3" href="#">2</a>
+                        </li>
+
+                        <li class="page-item">
+                            <a class="page-link px-3" href="#">3</a>
+                        </li>
+
+                        <li class="page-item">
+                            <a class="page-link px-3" href="#">4</a>
+                        </li>
+
+                        <li class="page-item">
+                            <a class="page-link px-3" href="#">5</a>
+                        </li>
+
+                        <li class="page-item">
+                            <a class="page-link px-3" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div id="kontak" class="container-fluid text-center digi-gradient-bg py-3 pt-5">
+            <h2 class="my-3 my-lg-5 font-dm-serif-text-regular">Kontak</h2>
+            <div class="row py-3 py-lg-5 d-flex justify-content-center align-items-center">
+                <div class="col-md-4 my-3 my-lg-5">
+                    <img src="/images/keppin.png" alt="KEPPIN Logo" style="max-width: 215px;">
+                </div>
+                <div class="col-md-6 my-5 text-start">
+                    <h2 class="font-dm-serif-text-regular">KEPPIN</h2>
+                    <h5 class="font-dm-serif-text-regular" style="font-size: 26px;">(Komite Etik Penelitian dan
+                        Pelayanan Indonesia)</h5>
+                    <br>
+                    <p class="font-noto-sans-regular" style="font-size: 18px;">Sekretariat: Jalan Salemba Raya 5-5A,
+                        Menara Salemba Lt-7, 27, Jakarta Pusat, Indonesia
+                        0819-707-174 - 0813-9891-1956
+                        keppin.pusat@gmail.com</p>
+                </div>
+            </div>
+            <div class="my-5 rounded-5 shadow-lg">
+                <p class="mb-0 p-3 font-noto-sans-bold" style="font-size: 20px;">Dikembangkan oleh dinustek dan KEPPIN
+                    2025</p>
+            </div>
+        </div>
+    </footer>
+
+</template>

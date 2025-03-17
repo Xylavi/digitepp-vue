@@ -1,0 +1,190 @@
+<script lang="js" setup>
+
+</script>
+
+<template>
+
+    <!--NAVIGATION BAR-->
+
+    <header>
+        <nav class="navbar navbar-expand-lg shadow-lg rounded-5 px-lg-4 mx-lg-5 mt-3 mt-lg-5 digi-gradient-bg">
+            <div class="container-fluid">
+                <a class="navbar-brand px-0" href="index.html">
+                    <img src="/images/svg/logo-digiTEPP.svg" alt="Digitepp" height="80">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#beranda"
+                    aria-controls="beranda" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="beranda">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 font-noto-sans-bold" style="font-size: 18px;">
+                        <li class="nav-item">
+                            <a class="nav-link py-3 px-4" href="index.html" aria-current="page">Beranda</a>
+                        </li>
+                        <li>
+                            <a class="nav-link py-3 px-4" href="#" aria-current="page">Fitur</a>
+                        </li>
+                        <li>
+                            <a class="nav-link py-3 px-4" href="#" aria-current="page">Login</a>
+                        </li>
+                        <li>
+                            <a class="nav-link py-3 px-4" href="#kontak" aria-current="page">Kontak</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <!--DETAIL KEP-->
+
+        <section class="m-3 m-lg-5">
+
+            <!-- Back Button -->
+            <router-link name="" id="" class="btn btn-primary my-5 bg-info-subtle border border-info digi-text-color-blue"
+                :to="{name: 'kepTerdaftar'}" role="button">
+                <i class="bi bi-arrow-left font-noto-sans-regular"> Kembali</i>
+            </router-link>
+
+            <div class="container text-center">
+                <h2 class="font-dm-serif-text-regular py-3 my-3 py-lg-5 my-lg-5">Detail KEP</h2>
+
+                <div class="row row-cols-1 row-cols-lg-2">
+                    <div class="col">
+                        <img src="/images/kep-terdaftar/stikes.png" alt="stikes" style="width: 30vw;">
+                        <h3 class="font-dm-serif-text-regular">STIKes RSPAD Gatot Soebroto</h3>
+                    </div>
+
+                    <div class="table-responsive py-3 digi-border-color-blue border border-3 rounded-5">
+                        <table class="table">
+                            <tbody class="text-start">
+
+                                <!-- NAMA LEMBAGA - Row 1 -->
+                                <tr class="">
+                                    <td>
+                                        <p class="font-noto-sans-bold">Nama Lembaga</p>
+                                        <p class="font-noto-sans-regular">STIKES RSPAD Gatot Subroto</p>
+                                    </td>
+                                </tr>
+
+                                <!-- JENIS LEMBAGA - Row 2 -->
+                                <tr class="">
+                                    <td>
+                                        <p class="font-noto-sans-bold">Jenis Lembaga</p>
+                                        <p class="font-noto-sans-regular">Pendidikan (Negeri, Swasta)</p>
+                                    </td>
+                                </tr>
+
+                                <!-- PEMILIK LEMBAGA - Row 3 -->
+                                <tr class="">
+                                    <td>
+                                        <p class="font-noto-sans-bold">Pemilik Lembaga</p>
+                                        <p class="font-noto-sans-regular">Swasta (Yayasan)</p>
+                                    </td>
+                                </tr>
+
+                                <!-- ALAMAT KEP - Row 4 -->
+                                <tr class="">
+                                    <td>
+                                        <p class="font-noto-sans-bold">Alamat KEP</p>
+                                        <p class="font-noto-sans-regular">Jl. dr. Abdul Rahman Saleh No 24 Senen,
+                                            Jakarta Pusat KOTA ADM. JAKARTA PUSAT, DKI JAKARTA, 10410</p>
+                                    </td>
+                                </tr>
+
+                                <!-- NOMOR TELEPON - Row 5 -->
+                                <tr class="">
+                                    <td>
+                                        <p class="font-noto-sans-bold">Nomor Telepon</p>
+                                        <p class="font-noto-sans-regular">081387403921</p>
+                                    </td>
+                                </tr>
+
+                                <!-- EMAIL KEP - Row 6 -->
+                                <tr class="">
+                                    <td>
+                                        <p class="font-noto-sans-bold">Email KEP</p>
+                                        <p class="font-noto-sans-regular">etik@stikesrspadgs.ac.id</p>
+                                    </td>
+                                </tr>
+
+                                <!-- KETUA - Row 7 -->
+                                <tr class="">
+                                    <td>
+                                        <p class="font-noto-sans-bold">Ketua</p>
+                                        <p class="font-noto-sans-regular">Christin Jayanti, S.ST., M.Kes</p>
+                                    </td>
+                                </tr>
+
+                                <!-- WAKIL KETUA - Row 8 -->
+                                <tr class="">
+                                    <td>
+                                        <p class="font-noto-sans-bold">Wakil Ketua</p>
+                                        <p class="font-noto-sans-regular"> - </p>
+                                    </td>
+                                </tr>
+
+                                <!-- SEKETARIS - Row 9 -->
+                                <tr class="">
+                                    <td>
+                                        <p class="font-noto-sans-bold">Seketaris</p>
+                                        <p class="font-noto-sans-regular">Ns. Meulu Primananda, S.Kep</p>
+                                    </td>
+                                </tr>
+
+                                <!-- ANGGOTA - Row 10 -->
+                                <tr class="">
+                                    <td>
+                                        <p class="font-noto-sans-bold">Anggota</p>
+                                        <p class="font-noto-sans-regular">
+                                        <ol>
+                                            <li>Ns. Bahreni Yusuf, S.Kep., M.Kep., SP.Kep.MB</li>
+                                            <li>Ns. Lilis Kamilah, S.Kep., M.Kep</li>
+                                            <li>Ns. Rahayu Maharani, M.Kep</li>
+                                            <li>Ns. Reni, M.Kep</li>
+                                            <li>Ns. Septirina Rahayu, M.Kep, Sp.Kep.J</li>
+                                            <li>Ns. Teti Hayati, M.M., M.Kep</li>
+                                            <li>Bdn. Dina Raidanti, S.SiT., M.Kes</li>
+                                            <li>Bdn. Hesti Kusumaningrum</li>
+                                            <li>Tetty Oktavia Limbong, M.Tr.Keb</li>
+                                            <li>Bdn. Devi Yulianti, SST., M.Bmd</li>
+                                        </ol>
+                                        </p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+    <footer>
+        <div id="kontak" class="container-fluid text-center digi-gradient-bg py-3 pt-5">
+            <h2 class="my-3 my-lg-5 font-dm-serif-text-regular">Kontak</h2>
+            <div class="row py-3 py-lg-5 d-flex justify-content-center align-items-center">
+                <div class="col-md-4 my-3 my-lg-5">
+                    <img src="/images/keppin.png" alt="KEPPIN Logo" style="max-width: 215px;">
+                </div>
+                <div class="col-md-6 my-5 text-start">
+                    <h2 class="font-dm-serif-text-regular">KEPPIN</h2>
+                    <h5 class="font-dm-serif-text-regular" style="font-size: 26px;">(Komite Etik Penelitian dan
+                        Pelayanan Indonesia)</h5>
+                    <br>
+                    <p class="font-noto-sans-regular" style="font-size: 18px;">Sekretariat: Jalan Salemba Raya 5-5A,
+                        Menara Salemba Lt-7, 27, Jakarta Pusat, Indonesia
+                        0819-707-174 - 0813-9891-1956
+                        keppin.pusat@gmail.com</p>
+                </div>
+            </div>
+            <div class="my-5 rounded-5 shadow-lg">
+                <p class="mb-0 p-3 font-noto-sans-bold" style="font-size: 20px;">Dikembangkan oleh dinustek dan KEPPIN
+                    2025</p>
+            </div>
+        </div>
+    </footer>
+
+</template>

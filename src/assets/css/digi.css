@@ -1,0 +1,406 @@
+.kep-card-logo{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.digi-backdrop-blur{
+    backdrop-filter: blur(15px);
+}
+
+
+/* Fonts */
+
+
+
+.font-noto-sans-bold{
+    font-family: "Noto Sans", serif !important;
+    font-optical-sizing: auto;
+    font-weight: bold !important;
+    font-style: normal !important;
+    font-variation-settings:"wdth" 100;
+}
+
+.font-noto-sans-regular{
+    font-family: "Noto Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+}
+
+.font-dm-serif-text-regular {
+    font-family: "DM Serif Text", serif !important;
+    font-weight: 400;
+    font-style: normal !important;
+}
+
+.font-dm-serif-text-regular-italic {
+    font-family: "DM Serif Text", serif !important;
+    font-weight: 400;
+    font-style: italic !important;
+}
+
+
+
+/*Font Style*/
+
+
+
+.digi-h1{
+    font-size: 56px !important;
+}
+
+.digi-h2{
+    font-size: 46px !important;
+}
+
+.digi-h3{
+    font-size: 40px !important;
+}
+
+.digi-h3-bold{
+    font-size: 40px !important;
+    font-weight: 700 !important;
+}
+
+.digi-h4{
+    font-size: 34px !important;
+}
+
+.digi-h5{
+    font-size: 26px !important;
+}
+
+.digi-p1{
+    font-size: 26px !important;
+}
+
+.digi-p1-bold{
+    font-size: 26px !important;
+    font-weight: 700 !important;
+}
+
+.digi-p2{
+    font-size: 20px !important;
+}
+
+.digi-p2-bold-link{
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    color: #000000 !important;
+    text-decoration: underline;
+}
+
+.digi-p2-bold{
+    font-size: 20px !important;
+    font-weight: 700 !important;
+}
+
+.digi-p3{
+    font-size: 18px !important;
+}
+
+.digi-p3-bold{
+    font-size: 18px !important;
+    font-weight: 700 !important;
+}
+
+.digi-p4{
+    font-size: 16px !important;
+}
+
+.digi-p4-bold{
+    font-size: 16px !important;
+    font-weight: 700 !important;
+}
+
+.digi-p5{
+    font-size: 13px !important;
+}
+
+.digi-p5-bold{
+    font-size: 13px !important;
+    font-weight: 700 !important;
+}
+
+
+
+.digi-kep-card-font-regular{
+    font-size: 13px;
+}
+
+.digi-kep-card-font-bold{
+    font-size: 16px;
+    color: #59BDEA !important;
+}
+
+.digi-kep-card-sle{
+    font-size: 10px;
+}
+
+.digi-kep-card-link{
+    font-size: 34px;
+    color: #59BDEA !important;
+    text-decoration: none;
+}
+
+.digi-testimonial-author{
+    color: #59BDEA;
+    font-size: 8px;
+}
+
+.digi-berita-title{
+    color: #59BDEA;
+    font-size: 16px;
+}
+
+
+
+/* Background */
+
+
+
+.digi-gradient-bg{
+    background-image: url(../images/webp/bg-hero-section.webp);
+    background-size: cover;
+}
+
+.digi-gradient-bg{
+    background-image: url(../images/webp/bg-hero-section.webp);
+    background-size: cover;
+}
+
+.digi-bg-repeat{
+    background-repeat: repeat;
+}
+
+.digi-bg-no-repeat{
+    background-repeat: no-repeat;
+}
+
+.digi-bg-cover{
+    background-size: cover;
+}
+
+.digi-bg-contain{
+    background-size: contain;
+}
+
+.digi-feature-bg{
+    background-color: #EDFAFF;
+}
+
+.digi-feature-bg-2{
+    background-color: #fbe3df;
+}
+
+.digi-jumbotron-1-bg{
+    background-color: #F5FAF6;
+}
+
+.digi-jumbotron-2-bg{
+    background-color: #F8ECEA;
+}
+
+
+/* Color */
+
+
+.digi-text-color-blue{
+    color: #59BDEA !important;
+}
+
+.digi-text-color-green{
+    color: #4DA361 !important;
+}
+
+.digi-text-color-orange{
+    color: #E69F3C !important;
+}
+
+.digi-text-color-red{
+    color: #CC5642 !important;
+}
+
+
+
+.digi-bg-color-blue{
+    background-color: #59BDEA !important;
+}
+
+.digi-bg-color-green{
+    background-color: #4DA361 !important;
+}
+
+.digi-bg-color-orange{
+    background-color: #E69F3C !important;
+}
+
+.digi-bg-color-red{
+    background-color: #CC5642 !important;
+}
+
+
+
+.digi-bg-color-blue-subtle{
+    background-color: #EDFAFF !important;
+}
+
+.digi-bg-color-green-subtle{
+    background-color: #F5FAF6 !important;
+}
+
+.digi-bg-color-orange-subtle{
+    background-color: #FAFAF5 !important;
+}
+
+.digi-bg-color-red-subtle{
+    background-color: #FAF6F5 !important;
+}
+
+
+
+.digi-border-color-blue{
+    border-color: #59BDEA !important;
+}
+
+.digi-border-color-green{
+    border-color: #4DA361 !important;
+}
+
+.digi-border-color-orange{
+    border-color: #E69F3C !important;
+}
+
+.digi-border-color-red{
+    border-color: #CC5642 !important;
+}
+
+
+
+.digi-bg-ligra-blue{
+    background-image: linear-gradient(to bottom , #6CC9DC, #437FC1);
+    background-repeat: no-repeat;
+}
+
+.digi-bg-ligra-green{
+    background-image: linear-gradient(to bottom , #76C461, #30B771);
+    background-repeat: no-repeat;
+}
+
+.digi-bg-ligra-orange{
+    background-image: linear-gradient(to bottom , #F6DE16, #F05C22);
+    background-repeat: no-repeat;
+}
+
+.digi-bg-ligra-red{
+    background-image: linear-gradient(to bottom , #F85034, #A82D18);
+    background-repeat: no-repeat;
+}
+
+.digi-gradient-overlay{
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 60%);
+    padding: 1rem;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+
+.digi-border-ligra-blue{
+    border-image: linear-gradient(to bottom, #6CC9DC, #437FC1);
+    border-image-slice: 1;
+}
+
+.digi-border-ligra-green{
+    border-image: linear-gradient(to bottom, #76C461, #30B771);
+    border-image-slice: 1;
+}
+
+.digi-border-ligra-orange{
+    border-image: linear-gradient(to bottom, #F6DE16, #F05C22);
+    border-image-slice: 1;
+}
+
+.digi-border-ligra-red{
+    border-image: linear-gradient(to bottom, #F85034, #A82D18);
+    border-image-slice: 1;
+}
+
+
+/* Media Queries */
+
+
+/* Viewports Smaller than 1440px. */
+@media screen and (max-width: 1023.98px) {
+    
+    .digi-headline-vw-low{
+        color: #000;
+    }
+
+    .digi-hdl-card-vw-low{
+        width: 100% !important;
+    }
+
+}
+
+/* Viewports Larger than 1440px or equal */
+@media screen and (min-width: 992px) {
+    
+    .digi-headline-vw-high{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: 1rem;
+        width: 100%;
+        color: #ffffff;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 60%);
+    }
+
+    .digi-hdl-card-vw-high{
+        width: 85% !important;
+    }
+}
+
+
+
+.digi-carousel-item {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+}
+
+
+/* Large */
+@media screen and (min-width: 992px) {
+    .digi-carousel-inner-lg {
+        position: relative;
+        width: 30vw !important;
+        height: 65vw !important;
+    }
+}
+
+
+/* Medium */
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+    .digi-carousel-inner-md {
+        position: relative;
+        width: 50vw !important;
+        height: 80vw !important;
+    }
+}
+
+
+/* Small */
+@media screen and (min-width: 376px) and (max-width: 767.98px) {
+    .digi-carousel-inner-sm {
+        position: relative;
+        width: 80vw !important;
+        height: 130vw !important;
+    }
+}
