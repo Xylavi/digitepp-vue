@@ -1,41 +1,14 @@
 <script lang="js" setup>
+import DigiNavbar from '@/components/DigiNavbar.vue';
+
 
 </script>
 
 <template>
-    <header>
-
+    
     <!-- NAVIGATION BAR -->
 
-    <nav
-        class="navbar px-lg-4 mx-lg-5 mt-3 navbar-expand-lg shadow-lg rounded-5 bg-opacity-75 digi-backdrop-blur fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand px-0" href="index.html">
-                <img src="/images/svg/logo-digiTEPP.svg" alt="Digitepp" height="80">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#beranda"
-                aria-controls="beranda" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="beranda">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 font-noto-sans-bold" style="font-size: 18px;">
-                    <li class="nav-item">
-                        <a class="nav-link py-3 px-4 active" href="index.html" aria-current="page">Beranda</a>
-                    </li>
-                    <li>
-                        <a class="nav-link py-3 px-4" href="#fitur" aria-current="page">Fitur</a>
-                    </li>
-                    <li>
-                        <a class="nav-link py-3 px-4" href="#" aria-current="page">Login</a>
-                    </li>
-                    <li>
-                        <a class="nav-link py-3 px-4" href="#kontak" aria-current="page">Kontak</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    </header>
+    <DigiNavbar/>
 
     <main>
 
@@ -66,9 +39,7 @@
             </div>
         </section>
 
-
         <!-- CAROUSEL SECTION -->
-
 
         <section class="py-5">
             <div class="container-fluid text-center">
@@ -80,28 +51,26 @@
                         <div class="carousel-item active">
                             <div class="row row-cols-2 row-cols-lg-6 g-3 gap-0 gap-lg-5 justify-content-center">
                                 <div class="col">
-                                    <img class="kep-card-logo border-0"
-                                        src="/images/kep-terdaftar/dr-soedono.png" alt="">
+                                    <img class="kep-card-logo border-0" src="/images/kep-terdaftar/dr-soedono.png"
+                                        alt="">
                                     <p class="font-noto-sans-bold my-2">RSUD dr. Soedono Madiun</p>
                                 </div>
                                 <div class="col">
-                                    <img class="kep-card-logo border-0" src="/images/kep-terdaftar/satya.png"
-                                        alt="">
+                                    <img class="kep-card-logo border-0" src="/images/kep-terdaftar/satya.png" alt="">
                                     <p class="font-noto-sans-bold my-2">Universitas Ichsan Satya Tangerang Selatan</p>
                                 </div>
                                 <div class="col">
-                                    <img class="kep-card-logo border-0"
-                                        src="/images/kep-terdaftar/as-syafiah.png" alt="">
+                                    <img class="kep-card-logo border-0" src="/images/kep-terdaftar/as-syafiah.png"
+                                        alt="">
                                     <p class="font-noto-sans-bold my-2">Universitas Islam As-Syafiiyah</p>
                                 </div>
                                 <div class="col">
-                                    <img class="kep-card-logo border-0"
-                                        src="/images/kep-terdaftar/unida-gontor.png" alt="">
+                                    <img class="kep-card-logo border-0" src="/images/kep-terdaftar/unida-gontor.png"
+                                        alt="">
                                     <p class="font-noto-sans-bold my-2">Universitas Darussalam Gontor</p>
                                 </div>
                                 <div class="col">
-                                    <img class="kep-card-logo border-0" src="/images/kep-terdaftar/stikes.png"
-                                        alt="">
+                                    <img class="kep-card-logo border-0" src="/images/kep-terdaftar/stikes.png" alt="">
                                     <p class="font-noto-sans-bold my-2">STIKES RSPAD Gatot Subroto</p>
                                 </div>
                             </div>
@@ -110,28 +79,26 @@
                         <div class="carousel-item">
                             <div class="row row-cols-2 row-cols-lg-6 g-3 gap-0 gap-lg-5 justify-content-center">
                                 <div class="col">
-                                    <img class="kep-card-logo border-0"
-                                        src="/images/kep-terdaftar/rs-soeharto.png" alt="">
+                                    <img class="kep-card-logo border-0" src="/images/kep-terdaftar/rs-soeharto.png"
+                                        alt="">
                                     <p class="font-noto-sans-bold my-2">Rumah Sakit Soeharto Heerdjan</p>
                                 </div>
                                 <div class="col">
-                                    <img class="kep-card-logo border-0" src="/images/kep-terdaftar/widya.png"
-                                        alt="">
+                                    <img class="kep-card-logo border-0" src="/images/kep-terdaftar/widya.png" alt="">
                                     <p class="font-noto-sans-bold my-2">Universitas Widya Nusantara (UWN) Palu</p>
                                 </div>
                                 <div class="col">
-                                    <img class="kep-card-logo border-0"
-                                        src="/images/kep-terdaftar/upn-jatim.png" alt="">
+                                    <img class="kep-card-logo border-0" src="/images/kep-terdaftar/upn-jatim.png"
+                                        alt="">
                                     <p class="font-noto-sans-bold my-2">UPN Veteran Jawa Timur</p>
                                 </div>
                                 <div class="col">
-                                    <img class="kep-card-logo border-0" src="/images/kep-terdaftar/unisbar.png"
-                                        alt="">
+                                    <img class="kep-card-logo border-0" src="/images/kep-terdaftar/unisbar.png" alt="">
                                     <p class="font-noto-sans-bold my-2">Universitas Sumatera Barat (Unisbar)</p>
                                 </div>
                                 <div class="col">
-                                    <img class="kep-card-logo border-0"
-                                        src="/images/kep-terdaftar/sayang-cianjur.png" alt="">
+                                    <img class="kep-card-logo border-0" src="/images/kep-terdaftar/sayang-cianjur.png"
+                                        alt="">
                                     <p class="font-noto-sans-bold my-2">RSUD SAYANG CIANJUR</p>
                                 </div>
                             </div>
@@ -154,9 +121,7 @@
             </div>
         </section>
 
-
         <!-- FITUR UNGGULAN SECTION -->
-
 
         <section id="fitur" class="py-5">
             <div class="container text-center">
@@ -226,9 +191,7 @@
             </div>
         </section>
 
-
         <!-- FITUR LAINNYA SECTION -->
-
 
         <section class="py-5">
             <div class="container text-center">
@@ -313,9 +276,7 @@
             </div>
         </section>
 
-
         <!-- PROSES REGIS SECTION -->
-
 
         <section class="py-5">
             <div class="container text-center">
@@ -426,9 +387,7 @@
             </div>
         </section>
 
-
         <!-- TESTIMONIAL SECTION -->
-
 
         <section class="py-5 digi-gradient-bg">
             <div class="container text-center">
@@ -516,13 +475,13 @@
                     </div>
                 </div>
 
-                <a class="px-5 my-5 py-2 
+                <router-link class="px-5 my-5 py-2 
                         btn btn-lg 
                         text-white 
                         shadow-sm 
                         rounded-5 
-                        digi-bg-ligra-orange" href="testimoni.html" role="button">Lihat Semua
-                </a>
+                        digi-bg-ligra-orange" :to="{name: 'testimoni'}" role="button">Lihat Semua
+                </router-link>
             </div>
         </section>
 

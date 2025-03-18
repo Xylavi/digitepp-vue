@@ -1,42 +1,12 @@
 <script setup>
-
-
+    import DigiFooter from '@/components/DigiFooter.vue';
+import DigiNavbar from '@/components/DigiNavbar.vue';
 </script>
 
 <template>
+    
     <header>
-
-        <!-- NAVIGATION BAR -->
-
-        <nav
-            class="navbar px-lg-4 mx-lg-5 mt-3 mt-lg-3 navbar-expand-lg shadow-lg rounded-5 digi-gradient-bg fixed-top">
-            <div class="container-fluid">
-                <router-link class="navbar-brand px-0" :to="{ name: 'digitepp' }">
-                    <img src="/images/svg/logo-digiTEPP.svg" alt="Digitepp" height="80">
-                </router-link>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#beranda"
-                    aria-controls="beranda" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="beranda">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 font-noto-sans-bold" style="font-size: 18px;">
-                        <li class="nav-item">
-                            <router-link class="nav-link py-3 px-4 active" :to="{ name: 'digitepp' }"
-                                aria-current="page">Beranda</router-link>
-                        </li>
-                        <li>
-                            <a class="nav-link py-3 px-4" href="#jumbotron" aria-current="page">Fitur</a>
-                        </li>
-                        <li>
-                            <a class="nav-link py-3 px-4" href="#" aria-current="page">Login</a>
-                        </li>
-                        <li>
-                            <a class="nav-link py-3 px-4" href="#kontak" aria-current="page">Kontak</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        <DigiNavbar/>
     </header>
 
     <main>
@@ -47,20 +17,22 @@
             <div class="container py-4 mt-0">
                 <div class="row pt-2 justify-content-center align-items-center">
                     <div class="col-lg-5 px-4 px-lg-0 order-2 order-lg-1">
-                        <h2 class="font-dm-serif-text-regular mt-3" style="font-size: 46px;">Digitalisasi Telaah Etik
-                            Penelitian dan Pelayanan</h2>
-                        <p class="mt-5" style="font-size: 18px;">
+                        <h2 class="font-dm-serif-text-regular mt-3 digi-h2">
+                            Digitalisasi Telaah Etik Penelitian dan Pelayanan
+                        </h2>
+                        <p class="mt-5 digi-p3 font-noto-sans-regular">
                             digiTEPP dikembangkan dengan tujuan untuk mempermudah,
                             mempercepat & mewakili seluruh proses pengajuan protokol
                             usulan surat layak etik yang diusulkan oleh peneliti
                         </p>
                         <div class="my-3 my-lg-5 d-grid d-md-flex d-lg-flex">
-                            <a class="px-5 mt-5 py-3 
+                            <a class="px-5 mt-5 py-3 font-noto-sans-regular
                             btn btn-lg 
                             text-white 
                             shadow-sm 
                             rounded-5 
-                            digi-bg-ligra-orange" href="#" role="button">Pelajari lebih lanjut</a>
+                            digi-bg-ligra-orange
+                            digi-p2" href="#" role="button">Pelajari lebih lanjut</a>
                         </div>
                     </div>
                     <div class="col-lg-7 order-1 order-lg-2">
@@ -134,8 +106,7 @@
                     <div class="col order-2 order-lg-1">
                         <div class="p-5">
                             <p class="font-noto-sans">KOMITE ETIK PENELITIAN</p>
-                            <h3 class="font-dm-serif-text-regular text-success">Lebih mudah melakukan telaah etik
-                                penelitian</h3>
+                            <h3 class="font-dm-serif-text-regular text-success">Lebih mudah melakukan telaah etik penelitian</h3>
                             <p class="font-noto-sans-bold">Jadikan proses telaah protokol etik lebih terstruktur, mudah,
                                 cepat, dan terpantau.</p>
                             <div class="row">
@@ -610,7 +581,8 @@
                     text-white 
                     shadow-sm 
                     rounded-5 
-                    digi-bg-ligra-orange" :to="{ name: 'testimoni' }" role="button">Lihat Semua
+                    digi-bg-ligra-orange" 
+                    :to="{ name: 'testimoni' }" role="button">Lihat Semua
                 </router-link>
             </div>
         </section>
@@ -674,27 +646,6 @@
         </section>
     </main>
     <footer>
-        <div id="kontak" class="container-fluid text-center digi-gradient-bg py-3 pt-5">
-            <h2 class="my-3 my-lg-5 font-dm-serif-text-regular">Kontak</h2>
-            <div class="row py-3 py-lg-5 d-flex justify-content-center align-items-center">
-                <div class="col-md-4 my-3 my-lg-5">
-                    <img src="/images/keppin.png" alt="KEPPIN Logo" style="max-width: 215px;">
-                </div>
-                <div class="col-md-6 my-5 text-start">
-                    <h2 class="font-dm-serif-text-regular">KEPPIN</h2>
-                    <h5 class="font-dm-serif-text-regular" style="font-size: 26px;">(Komite Etik Penelitian dan
-                        Pelayanan Indonesia)</h5>
-                    <br>
-                    <p class="font-noto-sans-regular" style="font-size: 18px;">Sekretariat: Jalan Salemba Raya 5-5A,
-                        Menara Salemba Lt-7, 27, Jakarta Pusat, Indonesia
-                        0819-707-174 - 0813-9891-1956
-                        keppin.pusat@gmail.com</p>
-                </div>
-            </div>
-            <div class="my-5 rounded-5 shadow-lg">
-                <p class="mb-0 p-3 font-noto-sans-bold" style="font-size: 20px;">Dikembangkan oleh dinustek dan KEPPIN
-                    2025</p>
-            </div>
-        </div>
+        <DigiFooter/>
     </footer>
 </template>
