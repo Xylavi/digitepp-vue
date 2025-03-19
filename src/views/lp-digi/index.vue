@@ -1,6 +1,6 @@
 <script setup>
     import DigiFooter from '@/components/DigiFooter.vue';
-import DigiNavbar from '@/components/DigiNavbar.vue';
+    import DigiNavbar from '@/components/DigiNavbar.vue';
 </script>
 
 <template>
