@@ -402,8 +402,8 @@ import DigiNavbar from '@/components/DigiNavbar.vue';
                     <div class="col d-flex">
                         <div class="p-5 rounded-4 text-bg-light shadow-lg d-grid">
                             <div class="row mb-5 text-start">
-                                <p class="digi-p4 font-noto-sans-regular opacity-75">Selama 3 bulan menggunakan
-                                    Digitepp, baik dari sisi mahasiswa maupun penelaah,
+                                <p class="digi-p4 font-noto-sans-regular opacity-75">
+                                    Selama 3 bulan menggunakan Digitepp, baik dari sisi mahasiswa maupun penelaah,
                                     kami merasa sangat terbantu dengan kemudahan yang diberikan,
                                     terutama dalam proses telaah etik protokol penelitian yang kini dapat dilakukan
                                     secara online dan paperless.
@@ -417,7 +417,7 @@ import DigiNavbar from '@/components/DigiNavbar.vue';
                                 </p>
                             </div>
                             <div class="row row-cols-2">
-                                <div class="col-8">
+                                <div class="col-12 col-lg-8">
                                     <div class="row row-cols-1 row-cols-lg-2 text-center text-lg-start">
                                         <div class="col col-lg-2 d-flex justify-content-center align-items-center">
                                             <img src="/images/kep-terdaftar/kepk-fkm.png" alt="DR.Soedono"
@@ -431,7 +431,7 @@ import DigiNavbar from '@/components/DigiNavbar.vue';
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-4 align-content-center">
+                                <div class="col-4 align-content-center d-none d-lg-block">
                                     <img class="position-absolute" src="/images/svg/quote.svg" alt="">
                                 </div>
                             </div>
@@ -454,7 +454,7 @@ import DigiNavbar from '@/components/DigiNavbar.vue';
                                 </p>
                             </div>
                             <div class="row mt-5 row-cols-2">
-                                <div class="col-8">
+                                <div class="col-12 col-lg-8">
                                     <div class="row row-cols-1 row-cols-lg-2 text-center text-lg-start">
                                         <div class="col col-lg-2 d-flex justify-content-center align-items-center">
                                             <img src="/images/kep-terdaftar/kep-ikest.png" alt="DR.Soedono"
@@ -468,7 +468,7 @@ import DigiNavbar from '@/components/DigiNavbar.vue';
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-4 align-content-center">
+                                <div class="col-4 align-content-center d-none d-lg-block">
                                     <img class="position-absolute" src="/images/svg/quote.svg" alt="">
                                 </div>
                             </div>
@@ -477,11 +477,12 @@ import DigiNavbar from '@/components/DigiNavbar.vue';
                 </div>
 
                 <router-link class="px-5 my-5 py-2 
-                        btn btn-lg 
-                        text-white 
-                        shadow-sm 
-                        rounded-5 
-                        digi-bg-ligra-orange" :to="{name: 'testimoni'}" role="button">Lihat Semua
+                    btn btn-lg 
+                    text-white 
+                    shadow-sm 
+                    rounded-5 
+                    digi-bg-ligra-orange" 
+                    :to="{ name: 'testimoni' }" role="button">Lihat Semua
                 </router-link>
             </div>
         </section>
