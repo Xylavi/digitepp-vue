@@ -1,4 +1,7 @@
 <script lang="js" setup>
+import DigiFooter from '@/components/DigiFooter.vue';
+import DigiNavbar from '@/components/DigiNavbar.vue';
+
 
 </script>
 
@@ -7,33 +10,7 @@
     <!--NAVIGATION BAR-->
 
     <header>
-        <nav class="navbar navbar-expand-lg shadow-lg rounded-5 px-lg-4 mx-lg-5 mt-3 mt-lg-5 digi-gradient-bg">
-            <div class="container-fluid">
-                <a class="navbar-brand px-0" href="index.html">
-                    <img src="/images/svg/logo-digiTEPP.svg" alt="Digitepp" height="80">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#beranda"
-                    aria-controls="beranda" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="beranda">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 font-noto-sans-bold" style="font-size: 18px;">
-                        <li class="nav-item">
-                            <a class="nav-link py-3 px-4" href="index.html" aria-current="page">Beranda</a>
-                        </li>
-                        <li>
-                            <a class="nav-link py-3 px-4" href="#" aria-current="page">Fitur</a>
-                        </li>
-                        <li>
-                            <a class="nav-link py-3 px-4" href="#" aria-current="page">Login</a>
-                        </li>
-                        <li>
-                            <a class="nav-link py-3 px-4" href="#kontak" aria-current="page">Kontak</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        <DigiNavbar/>
     </header>
     <main>
 
@@ -163,28 +140,7 @@
 
     </main>
     <footer>
-        <div id="kontak" class="container-fluid text-center digi-gradient-bg py-3 pt-5">
-            <h2 class="my-3 my-lg-5 font-dm-serif-text-regular">Kontak</h2>
-            <div class="row py-3 py-lg-5 d-flex justify-content-center align-items-center">
-                <div class="col-md-4 my-3 my-lg-5">
-                    <img src="/images/keppin.png" alt="KEPPIN Logo" style="max-width: 215px;">
-                </div>
-                <div class="col-md-6 my-5 text-start">
-                    <h2 class="font-dm-serif-text-regular">KEPPIN</h2>
-                    <h5 class="font-dm-serif-text-regular" style="font-size: 26px;">(Komite Etik Penelitian dan
-                        Pelayanan Indonesia)</h5>
-                    <br>
-                    <p class="font-noto-sans-regular" style="font-size: 18px;">Sekretariat: Jalan Salemba Raya 5-5A,
-                        Menara Salemba Lt-7, 27, Jakarta Pusat, Indonesia
-                        0819-707-174 - 0813-9891-1956
-                        keppin.pusat@gmail.com</p>
-                </div>
-            </div>
-            <div class="my-5 rounded-5 shadow-lg">
-                <p class="mb-0 p-3 font-noto-sans-bold" style="font-size: 20px;">Dikembangkan oleh dinustek dan KEPPIN
-                    2025</p>
-            </div>
-        </div>
+        <DigiFooter/>
     </footer>
 
 </template>
