@@ -6,7 +6,7 @@
 <template>
     
     <header>
-        <DigiNavbar/>
+        <DigiNavbar :fixed-top="true"/>
     </header>
 
     <main>

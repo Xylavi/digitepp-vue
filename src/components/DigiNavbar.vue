@@ -1,6 +1,5 @@
-
 <template>
-    <nav class="navbar px-lg-4 mx-lg-5 mt-3 navbar-expand-lg shadow-lg rounded-5 bg-opacity-75 digi-backdrop-blur fixed-top">
+    <nav :class="['navbar px-lg-4 mx-lg-5 mt-3 navbar-expand-lg shadow-lg rounded-5 bg-opacity-75 digi-backdrop-blur', { 'fixed-top': fixedTop }]">
         <div class="container-fluid">
             <router-link class="navbar-brand px-0" :to="{ name: 'home' }">
                 <img src="/images/svg/logo-digiTEPP.svg" alt="Digitepp" height="80">
@@ -28,3 +27,12 @@
         </div>
     </nav>
 </template>
+
+<script setup>
+defineProps({
+    fixedTop: {
+        type: Boolean,
+        default: true
+    }
+});
+</script>

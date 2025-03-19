@@ -1,14 +1,12 @@
 <script lang="js" setup>
 import DigiFooter from '@/components/DigiFooter.vue';
 import DigiNavbar from '@/components/DigiNavbar.vue';
-
-
 </script>
 
 <template>
 
     <header>
-        <DigiNavbar/>
+        <DigiNavbar :fixed-top="false"/>
     </header>
     <main>
 

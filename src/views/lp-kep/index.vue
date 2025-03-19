@@ -8,7 +8,7 @@ import DigiNavbar from '@/components/DigiNavbar.vue';
     <!-- NAVIGATION BAR -->
 
     <header>
-        <DigiNavbar/>
+        <DigiNavbar :fixed-top="true"/>
     </header>
 
     <main>
