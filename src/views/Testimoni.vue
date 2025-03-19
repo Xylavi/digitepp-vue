@@ -16,7 +16,7 @@ import DigiNavbar from '@/components/DigiNavbar.vue';
 
             <!-- Back Button -->
             <router-link name="" id="" class="btn btn-primary my-5 bg-info-subtle border border-info digi-text-color-blue"
-                :to="{name: 'digitepp'}" role="button">
+                :to="{name: 'home'}" role="button">
                 <i class="bi bi-arrow-left font-noto-sans-regular"> Kembali ke Beranda</i>
             </router-link>
 
