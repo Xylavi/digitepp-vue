@@ -22,9 +22,9 @@ import DigiBackButton from '@/components/DigiBackButton.vue'
             <DigiBackButton/>
 
             <div class="container text-center">
-                <h2 class="font-dm-serif-text-regular py-3 my-3 py-lg-5 my-lg-5">Detail KEP</h2>
+                <h2 class="font-dm-serif-text-regular py-3 my-3 py-lg-5">Detail KEP</h2>
 
-                <div class="row row-cols-1 row-cols-lg-2">
+                <div class="row row-cols-1 row-cols-lg-2 my-lg-5">
                     <div class="col">
                         <img src="/images/kep-terdaftar/stikes.png" alt="stikes" style="width: 30vw;">
                         <h3 class="font-dm-serif-text-regular">STIKes RSPAD Gatot Soebroto</h3>
@@ -111,8 +111,7 @@ import DigiBackButton from '@/components/DigiBackButton.vue'
                                 <tr class="">
                                     <td>
                                         <p class="font-noto-sans-bold">Anggota</p>
-                                        <p class="font-noto-sans-regular">
-                                        <ol>
+                                        <ol class="font-noto-sans-regular">
                                             <li>Ns. Bahreni Yusuf, S.Kep., M.Kep., SP.Kep.MB</li>
                                             <li>Ns. Lilis Kamilah, S.Kep., M.Kep</li>
                                             <li>Ns. Rahayu Maharani, M.Kep</li>
@@ -124,7 +123,6 @@ import DigiBackButton from '@/components/DigiBackButton.vue'
                                             <li>Tetty Oktavia Limbong, M.Tr.Keb</li>
                                             <li>Bdn. Devi Yulianti, SST., M.Bmd</li>
                                         </ol>
-                                        </p>
                                     </td>
                                 </tr>
                             </tbody>
