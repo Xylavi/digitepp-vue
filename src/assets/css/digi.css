@@ -161,16 +161,6 @@
 
 
 
-.digi-gradient-bg{
-    background-image: url(../images/webp/bg-hero-section.webp);
-    background-size: cover;
-}
-
-.digi-gradient-bg{
-    background-image: url(../images/webp/bg-hero-section.webp);
-    background-size: cover;
-}
-
 .digi-bg-repeat{
     background-repeat: repeat;
 }
@@ -204,7 +194,9 @@
 }
 
 
+
 /* Color */
+
 
 
 .digi-text-color-blue{
@@ -222,6 +214,10 @@
 .digi-text-color-red{
     color: #CC5642 !important;
 }
+
+
+
+/* Background Color */
 
 
 
@@ -261,23 +257,36 @@
 
 
 
+/* Border Color */
+
+
+
 .digi-border-color-blue{
-    border-color: #59BDEA !important;
+    border: 2px solid #59BDEA !important;
 }
 
 .digi-border-color-green{
-    border-color: #4DA361 !important;
+    border: 2px solid #4DA361 !important;
 }
 
 .digi-border-color-orange{
-    border-color: #E69F3C !important;
+    border: 2px solid #E69F3C !important;
 }
 
 .digi-border-color-red{
-    border-color: #CC5642 !important;
+    border: 2px solid #CC5642 !important;
 }
 
 
+
+/* Image Background / Linear Gradient */
+
+
+
+.digi-gradient-bg{
+    background-image: url(../images/webp/bg-hero-section.webp);
+    background-size: cover;
+}
 
 .digi-bg-ligra-blue{
     background-image: linear-gradient(to bottom , #6CC9DC, #437FC1);
@@ -310,6 +319,10 @@
 
 
 
+/* Border Image / Linear Gradient */
+
+
+
 .digi-border-ligra-blue{
     border-image: linear-gradient(to bottom, #6CC9DC, #437FC1);
     border-image-slice: 1;
@@ -331,7 +344,9 @@
 }
 
 
+
 /* Media Queries */
+
 
 
 /* Viewports Smaller than 1440px. */

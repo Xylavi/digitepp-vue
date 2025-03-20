@@ -135,7 +135,7 @@ import DigiNavbar from '@/components/DigiNavbar.vue';
                     <div class="col p-3 p-lg-2 d-flex">
 
                         <div
-                            class="border border-2 py-3 px-4 my-3 my-lg-0 rounded-5 digi-bg-color-green-subtle digi-border-color-green">
+                            class="border-2 py-3 px-4 my-3 my-lg-0 rounded-5 digi-bg-color-green-subtle digi-border-color-green">
                             <img class="img-thumbnail p-0 border-0" src="/images/1x/fu-ijo.png" alt="">
                             <div class="text-start">
                                 <h4 class="digi-h4 font-dm-serif-text-regular digi-text-color-green">Alur telaah
@@ -149,7 +149,7 @@ import DigiNavbar from '@/components/DigiNavbar.vue';
                     <div class="col p-3 p-lg-2 d-flex">
 
                         <div
-                            class="border border-2 py-3 px-4 my-3 my-lg-0 rounded-5 digi-bg-color-blue-subtle digi-border-color-blue">
+                            class="border-2 py-3 px-4 my-3 my-lg-0 rounded-5 digi-bg-color-blue-subtle digi-border-color-blue">
                             <img class="img-thumbnail p-0 border-0" src="/images/1x/fu-biru.png" alt="">
                             <div class="text-start">
                                 <h4 class="digi-h4 font-dm-serif-text-regular digi-text-color-blue">Penugasan Tim
@@ -163,7 +163,7 @@ import DigiNavbar from '@/components/DigiNavbar.vue';
                     <div class="col p-3 p-lg-2 d-flex">
 
                         <div
-                            class="border border-2 py-3 px-4 my-3 my-lg-0 rounded-5 digi-bg-color-orange-subtle digi-border-color-orange">
+                            class="border-2 py-3 px-4 my-3 my-lg-0 rounded-5 digi-bg-color-orange-subtle digi-border-color-orange">
                             <img class="img-thumbnail p-0 border-0" src="/images/1x/fu-kuning.png" alt="">
                             <div class="text-start">
                                 <h4 class="digi-h4 font-dm-serif-text-regular digi-text-color-orange">Penerbitan Surat
@@ -177,7 +177,7 @@ import DigiNavbar from '@/components/DigiNavbar.vue';
                     <div class="col p-3 p-lg-2 d-flex">
 
                         <div
-                            class="border border-2 py-3 px-4 my-3 my-lg-0 rounded-5 digi-bg-color-red-subtle digi-border-color-red">
+                            class="border-2 py-3 px-4 my-3 my-lg-0 rounded-5 digi-bg-color-red-subtle digi-border-color-red">
                             <img class="img-thumbnail p-0 border-0" src="/images/1x/fu-merah.png" alt="">
                             <div class="text-start">
                                 <h4 class="digi-h4 font-dm-serif-text-regular digi-text-color-red">Setting Biaya Usulan
@@ -205,7 +205,7 @@ import DigiNavbar from '@/components/DigiNavbar.vue';
                     <div class="col d-flex">
 
                         <div
-                            class="border border-2 py-3 px-3 my-3 my-lg-0 rounded-5 digi-bg-color-green-subtle digi-border-color-green">
+                            class="border-2 py-3 px-3 my-3 my-lg-0 rounded-5 digi-bg-color-green-subtle digi-border-color-green">
                             <img class="img-thumbnail bg-transparent p-0 border-0 mb-3"
                                 src="/images/1x/business (1) 1.png" alt="Placeholder">
                             <div class="text-start">
@@ -219,7 +219,7 @@ import DigiNavbar from '@/components/DigiNavbar.vue';
                     <div class="col d-flex">
 
                         <div
-                            class="border border-2 py-3 px-3 my-3 my-lg-0 rounded-5 digi-bg-color-green-subtle digi-border-color-green">
+                            class="border-2 py-3 px-3 my-3 my-lg-0 rounded-5 digi-bg-color-green-subtle digi-border-color-green">
                             <img class="img-thumbnail bg-transparent p-0 border-0 mb-3"
                                 src="/images/1x/pie-chart (1) 1.png" alt="Placeholder">
                             <div class="text-start">
@@ -233,7 +233,7 @@ import DigiNavbar from '@/components/DigiNavbar.vue';
                     <div class="col d-flex">
 
                         <div
-                            class="border border-2 py-3 px-3 my-3 my-lg-0 rounded-5 digi-bg-color-green-subtle digi-border-color-green">
+                            class="border-2 py-3 px-3 my-3 my-lg-0 rounded-5 digi-bg-color-green-subtle digi-border-color-green">
                             <img class="img-thumbnail bg-transparent p-0 border-0 mb-3"
                                 src="/images/1x/process (1) 1.png" alt="Placeholder">
                             <div class="text-start">
@@ -247,7 +247,7 @@ import DigiNavbar from '@/components/DigiNavbar.vue';
                     <div class="col d-flex">
 
                         <div
-                            class="border border-2 py-3 px-3 my-3 my-lg-0 rounded-5 digi-bg-color-green-subtle digi-border-color-green">
+                            class="border-2 py-3 px-3 my-3 my-lg-0 rounded-5 digi-bg-color-green-subtle digi-border-color-green">
                             <img class="img-thumbnail bg-transparent p-0 border-0 mb-3"
                                 src="/images/1x/online-banking (1) 1.png" alt="Placeholder">
                             <div class="text-start">
@@ -261,7 +261,7 @@ import DigiNavbar from '@/components/DigiNavbar.vue';
                     <div class="col d-flex">
 
                         <div
-                            class="border border-2 py-3 px-3 my-3 my-lg-0 rounded-5 digi-bg-color-green-subtle digi-border-color-green">
+                            class="border-2 py-3 px-3 my-3 my-lg-0 rounded-5 digi-bg-color-green-subtle digi-border-color-green">
                             <img class="img-thumbnail bg-transparent p-0 border-0 mb-3"
                                 src="/images/1x/technique (1) 1.png" alt="Placeholder">
                             <div class="text-start">

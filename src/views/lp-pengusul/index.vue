@@ -119,7 +119,7 @@ import DigiNavbar from '@/components/DigiNavbar.vue';
                     <div class="col p-3 p-lg-2 d-flex">
 
                         <div
-                            class="border border-2 py-3 px-4 my-3 my-lg-0 rounded-4 digi-bg-color-green-subtle digi-border-color-green">
+                            class="border-2 py-3 px-4 my-3 my-lg-0 rounded-4 digi-bg-color-green-subtle digi-border-color-green">
                             <img class="img-thumbnail bg-transparent p-0 border-0" src="/images/1x/p2-ijo.png" alt="">
                             <div class="text-start">
                                 <h4 class="digi-h4 font-dm-serif-text-regular digi-text-color-green">
@@ -135,7 +135,7 @@ import DigiNavbar from '@/components/DigiNavbar.vue';
                     <div class="col p-3 p-lg-2 d-flex">
 
                         <div
-                            class="border border-2 py-3 px-4 my-3 my-lg-0 rounded-4 digi-bg-color-blue-subtle digi-border-color-blue">
+                            class="border-2 py-3 px-4 my-3 my-lg-0 rounded-4 digi-bg-color-blue-subtle digi-border-color-blue">
                             <img class="img-thumbnail bg-transparent p-0 border-0" src="/images/1x/p3-biru.png" alt="">
                             <div class="text-start">
                                 <h4 class="digi-h4 font-dm-serif-text-regular digi-text-color-blue">
@@ -151,7 +151,7 @@ import DigiNavbar from '@/components/DigiNavbar.vue';
                     <div class="col p-3 p-lg-2 d-flex">
 
                         <div
-                            class="border border-2 py-3 px-4 my-3 my-lg-0 rounded-4 digi-bg-color-orange-subtle digi-border-color-orange">
+                            class="border-2 py-3 px-4 my-3 my-lg-0 rounded-4 digi-bg-color-orange-subtle digi-border-color-orange">
                             <img class="img-thumbnail bg-transparent p-0 border-0" src="/images/1x/p4-kuning.png"
                                 alt="">
                             <div class="text-start">
@@ -169,7 +169,7 @@ import DigiNavbar from '@/components/DigiNavbar.vue';
                     <div class="col p-3 p-lg-2 d-flex">
 
                         <div
-                            class="border border-2 py-3 px-4 my-3 my-lg-0 rounded-4 digi-bg-color-red-subtle digi-border-color-red">
+                            class="border-2 py-3 px-4 my-3 my-lg-0 rounded-4 digi-bg-color-red-subtle digi-border-color-red">
                             <img class="img-thumbnail bg-transparent p-0 border-0" src="/images/1x/p1-merah.png" alt="">
                             <div class="text-start">
                                 <h4 class="digi-h4 font-dm-serif-text-regular digi-text-color-red">Submit ke 50+ KEP

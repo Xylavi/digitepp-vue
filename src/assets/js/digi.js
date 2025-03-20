@@ -1,10 +1,14 @@
 document.addEventListener('DOMContentLoaded', function() {
     const indicatorButtons = document.querySelectorAll('.btn[data-bs-target="#phoneCarousel"]');
 
+    if (indicatorButtons.length === 0) {
+        return;
+    }
+
     function resetButtonStates() {
         indicatorButtons.forEach(btn => {
             btn.classList.remove(
-                'border', 'border-3', 
+                'border-3', 
                 'digi-bg-color-blue-subtle', 'digi-border-color-blue',
                 'digi-bg-color-green-subtle', 'digi-border-color-green',
                 'digi-bg-color-orange-subtle', 'digi-border-color-orange',
@@ -29,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const color = btn.getAttribute('digi-data-color');
 
             if (color) {
-                btn.classList.add(`digi-bg-color-${color}-subtle`, `digi-border-color-${color}`, 'border', 'border-3');
+                btn.classList.add(`digi-bg-color-${color}-subtle`, `digi-border-color-${color}`, 'border-3');
             }
 
             const title = btn.querySelector('.digi-p2');
