@@ -1,7 +1,7 @@
 <script lang="js" setup>
 import DigiFooter from '@/components/DigiFooter.vue';
 import DigiNavbar from '@/components/DigiNavbar.vue';
-
+import DigiBackButton from '@/components/DigiBackButton.vue'
 
 </script>
 
@@ -19,10 +19,7 @@ import DigiNavbar from '@/components/DigiNavbar.vue';
         <section class="m-3 m-lg-5">
 
             <!-- Back Button -->
-            <router-link name="" id="" class="btn btn-primary my-5 bg-info-subtle border border-info digi-text-color-blue"
-                :to="{name: 'kepTerdaftar'}" role="button">
-                <i class="bi bi-arrow-left font-noto-sans-regular"> Kembali</i>
-            </router-link>
+            <DigiBackButton/>
 
             <div class="container text-center">
                 <h2 class="font-dm-serif-text-regular py-3 my-3 py-lg-5 my-lg-5">Detail KEP</h2>
