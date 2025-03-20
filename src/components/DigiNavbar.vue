@@ -5,13 +5,13 @@
                 <img src="/images/svg/logo-digiTEPP.svg" alt="Digitepp" height="80">
             </router-link>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#beranda"
-                aria-controls="beranda" aria-expanded="false" aria-label="Toggle navigation">
+                aria-controls="beranda" aria-expanded="false" aria-label="Toggle navigation">   
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="beranda">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 font-noto-sans-bold digi-p3">
                     <li class="nav-item">
-                        <router-link class="nav-link py-3 px-4 active" :to="{ name: 'home' }" aria-current="page">Beranda</router-link>
+                        <a class="nav-link py-3 px-4 active" href="#hero" aria-current="page">Beranda</a>
                     </li>
                     <li>
                         <a class="nav-link py-3 px-4" href="#fitur" aria-current="page">Fitur</a>

@@ -14,7 +14,7 @@ import DigiNavbar from '@/components/DigiNavbar.vue';
 
         <!-- HERO SECTION -->
 
-        <section class="py-5 digi-gradient-bg">
+        <section id="hero" class="py-5 digi-gradient-bg">
             <div class="container py-4 mt-0">
                 <div class="row pt-2 justify-content-center align-items-center">
                     <div class="col-lg-5 px-4 px-lg-0 order-2 order-lg-1">

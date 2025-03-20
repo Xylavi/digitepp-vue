@@ -13,7 +13,7 @@
 
         <!-- HERO SECTION -->
 
-        <section class="py-5 digi-gradient-bg">
+        <section id="hero" class="py-5 digi-gradient-bg">
             <div class="container py-4 mt-0">
                 <div class="row pt-2 justify-content-center align-items-center">
                     <div class="col-lg-5 px-4 px-lg-0 order-2 order-lg-1">
@@ -106,9 +106,12 @@
                     <div class="col order-2 order-lg-1">
                         <div class="p-5">
                             <p class="font-noto-sans">KOMITE ETIK PENELITIAN</p>
-                            <h3 class="font-dm-serif-text-regular text-success">Lebih mudah melakukan telaah etik penelitian</h3>
-                            <p class="font-noto-sans-bold">Jadikan proses telaah protokol etik lebih terstruktur, mudah,
-                                cepat, dan terpantau.</p>
+                            <router-link :to="{ name: 'kep' }" class="digi-h3 lh-1 font-dm-serif-text-regular text-success text-decoration-none">
+                                Lebih mudah melakukan telaah etik penelitian
+                            </router-link>
+                            <p class="font-noto-sans-bold mt-3">
+                                Jadikan proses telaah protokol etik lebih terstruktur, mudah, cepat, dan terpantau.
+                            </p>
                             <div class="row">
                                 <ul class="col-sm">
                                     <li>Pengelolaan anggota KEP</li>
@@ -128,9 +131,11 @@
 
                             <div class="my-3 my-lg-5 d-grid d-md-flex d-lg-flex gap-0 gap-md-3 gap-lg-3">
                                 <a class="p-2 px-4 my-2 btn rounded-5 text-white shadow-lg digi-bg-ligra-green"
-                                    href="#">Login Sebagai KEP/Penelaah</a>
+                                    href="#">Login Sebagai KEP/Penelaah
+                                </a>
                                 <a class="p-2 px-4 my-2 btn rounded-5 btn-light text-success shadow-lg"
-                                    href="#">Registerasi Sebagai KEP</a>
+                                    href="#">Registerasi Sebagai KEP
+                                </a>
                             </div>
 
                         </div>
@@ -146,10 +151,12 @@
                     <div class="col order-2 order-lg-1">
                         <div class="p-5">
                             <p class="">PENGUSUL / PENELITI / Mahasiswa</p>
-                            <h3 class="font-dm-serif-text-regular text-danger">Pengajuan protokol etik penelitian lebih
-                                mudah</h3>
-                            <p class="font-noto-sans-bold">Mengajukan protokol etik lebih mudah, terstruktur, terpantau,
-                                dan berstandar internasional</p>
+                            <router-link :to="{ name: 'pengusul' }" class="digi-h3 lh-1 font-dm-serif-text-regular text-danger text-decoration-none">
+                                Pengajuan protokol etik penelitian lebih mudah
+                            </router-link>
+                            <p class="font-noto-sans-bold mt-3">
+                                Mengajukan protokol etik lebih mudah, terstruktur, terpantau, dan berstandar internasional
+                            </p>
                             <div class="row">
                                 <ul class="col-sm">
                                     <li>Form usulan sesuai jenis penelitian</li>
@@ -168,9 +175,11 @@
 
                             <div class="my-3 my-lg-5 d-grid d-md-flex d-lg-flex gap-0 gap-md-3 gap-lg-3">
                                 <a class="p-2 px-4 my-2 btn rounded-5 text-white shadow-lg digi-bg-ligra-red"
-                                    href="#">Login Sebagai Pengusul</a>
+                                    href="#">Login Sebagai Pengusul
+                                </a>
                                 <a class="p-2 px-4 my-2 btn rounded-5 btn-light text-danger shadow-lg"
-                                    href="#">Registerasi Sebagai Pengusul</a>
+                                    href="#">Registerasi Sebagai Pengusul
+                                </a>
                             </div>
                         </div>
                     </div>

@@ -15,21 +15,24 @@ import DigiNavbar from '@/components/DigiNavbar.vue';
 
         <!-- HERO SECTION -->
 
-        <section class="py-5 digi-gradient-bg">
+        <section id="#hero" class="py-5 digi-gradient-bg">
             <div class="container py-4 mt-0">
                 <div class="row pt-2 justify-content-center align-items-center">
                     <div class="col-lg-5 px-4 px-lg-0 order-2 order-lg-1">
-                        <h2 class="font-dm-serif-text-regular mt-3" style="font-size: 46px;">Mempermudah Proses Telaah
-                            Etik</h2>
-                        <p class="mt-5 font-noto-sans-regular" style="font-size: 18px;">
+                        <h2 class="digi-h2 font-dm-serif-text-regular mt-3">
+                            Mempermudah Proses Telaah Etik
+                        </h2>
+                        <p class="digi-p3 mt-5 font-noto-sans-regular">
                             Jadikan proses telaah usulan protokol etik lebih terstruktur, mudah, cepat, dan terpantau.
                         </p>
 
                         <div class="my-5 d-grid d-md-flex d-lg-flex">
                             <a class="py-3 px-4 m-2 mx-lg-1 btn btn-sm rounded-5 text-decoration-none text-white shadow-lg digi-bg-ligra-green font-noto-sans-bold"
-                                href="#">Daftarkan KEP</a>
+                                href="#">Daftarkan KEP
+                            </a>
                             <a class="py-3 px-4 m-2 mx-lg-1 btn btn-sm rounded-5 text-decoration-none btn-light text-success shadow-lg font-noto-sans-bold"
-                                href="#">Login sebagai KEP/Penelaah</a>
+                                href="#">Login sebagai KEP/Penelaah
+                            </a>
                         </div>
 
                     </div>
@@ -39,7 +42,7 @@ import DigiNavbar from '@/components/DigiNavbar.vue';
                 </div>
             </div>
         </section>
-
+            
         <!-- CAROUSEL SECTION -->
 
         <section class="py-5">
