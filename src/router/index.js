@@ -20,7 +20,7 @@ const routes = [
         component: KepTerdaftar
     },
     {
-        path: '/detail-kep',
+        path: '/detail-kep/:id',
         name: 'detailKep',
         component: DetailKep
     },

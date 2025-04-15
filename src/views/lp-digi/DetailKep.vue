@@ -1,9 +1,26 @@
-<script lang="js" setup>
+<script setup>
+import { onMounted, ref } from 'vue';
+import { useRoute } from 'vue-router'; 
+import axios from 'axios';
+
 import DigiFooter from '@/components/DigiFooter.vue';
 import DigiNavbar from '@/components/DigiNavbar.vue';
-import DigiBackButton from '@/components/DigiBackButton.vue'
+import DigiBackButton from '@/components/DigiBackButton.vue';
 
+const kep = ref(null);
+const route = useRoute(); 
+const id = route.params.id; 
+
+onMounted(async () => {
+    try {
+        const response = await axios.get(`http://127.0.0.1:8000/api/kep/${id}`);
+        kep.value = response.data.data;
+    } catch (error) {
+        console.error('Failed to fetch data:', error);
+    }
+});
 </script>
+
 
 <template>
 
@@ -27,7 +44,7 @@ import DigiBackButton from '@/components/DigiBackButton.vue'
                 <div class="row row-cols-1 row-cols-lg-2 my-lg-5">
                     <div class="col">
                         <img src="/images/kep-terdaftar/stikes.png" alt="stikes" style="width: 30vw;">
-                        <h3 class="font-dm-serif-text-regular">STIKes RSPAD Gatot Soebroto</h3>
+                        <h3 class="font-dm-serif-text-regular">{{ kep?.nama || '-' }}</h3>
                     </div>
 
                     <div class="table-responsive py-3 digi-border-color-blue border border-3 rounded-5">
@@ -38,7 +55,7 @@ import DigiBackButton from '@/components/DigiBackButton.vue'
                                 <tr class="">
                                     <td>
                                         <p class="font-noto-sans-bold">Nama Lembaga</p>
-                                        <p class="font-noto-sans-regular">STIKES RSPAD Gatot Subroto</p>
+                                        <p class="font-noto-sans-regular">{{ kep?.lembaga?.nama || '-' }}</p>
                                     </td>
                                 </tr>
 
@@ -46,7 +63,7 @@ import DigiBackButton from '@/components/DigiBackButton.vue'
                                 <tr class="">
                                     <td>
                                         <p class="font-noto-sans-bold">Jenis Lembaga</p>
-                                        <p class="font-noto-sans-regular">Pendidikan (Negeri, Swasta)</p>
+                                        <p class="font-noto-sans-regular">{{ kep?.jenis_lembaga || '-' }}</p>
                                     </td>
                                 </tr>
 
@@ -54,7 +71,7 @@ import DigiBackButton from '@/components/DigiBackButton.vue'
                                 <tr class="">
                                     <td>
                                         <p class="font-noto-sans-bold">Pemilik Lembaga</p>
-                                        <p class="font-noto-sans-regular">Swasta (Yayasan)</p>
+                                        <p class="font-noto-sans-regular">{{ kep?.pemilik_lembaga || '-' }}</p>
                                     </td>
                                 </tr>
 
@@ -62,8 +79,7 @@ import DigiBackButton from '@/components/DigiBackButton.vue'
                                 <tr class="">
                                     <td>
                                         <p class="font-noto-sans-bold">Alamat KEP</p>
-                                        <p class="font-noto-sans-regular">Jl. dr. Abdul Rahman Saleh No 24 Senen,
-                                            Jakarta Pusat KOTA ADM. JAKARTA PUSAT, DKI JAKARTA, 10410</p>
+                                        <p class="font-noto-sans-regular">{{ kep?.alamat || '-' }}</p>
                                     </td>
                                 </tr>
 
@@ -71,7 +87,7 @@ import DigiBackButton from '@/components/DigiBackButton.vue'
                                 <tr class="">
                                     <td>
                                         <p class="font-noto-sans-bold">Nomor Telepon</p>
-                                        <p class="font-noto-sans-regular">081387403921</p>
+                                        <p class="font-noto-sans-regular">{{ kep?.telp || '-' }}</p>
                                     </td>
                                 </tr>
 
@@ -79,7 +95,7 @@ import DigiBackButton from '@/components/DigiBackButton.vue'
                                 <tr class="">
                                     <td>
                                         <p class="font-noto-sans-bold">Email KEP</p>
-                                        <p class="font-noto-sans-regular">etik@stikesrspadgs.ac.id</p>
+                                        <p class="font-noto-sans-regular">{{ kep?.email || '-' }}</p>
                                     </td>
                                 </tr>
 
@@ -87,7 +103,9 @@ import DigiBackButton from '@/components/DigiBackButton.vue'
                                 <tr class="">
                                     <td>
                                         <p class="font-noto-sans-bold">Ketua</p>
-                                        <p class="font-noto-sans-regular">Christin Jayanti, S.ST., M.Kes</p>
+                                        <p class="font-noto-sans-regular">
+                                            {{ kep?.anggota?.find(a => a.role?.id === 11)?.nama || '-' }}
+                                        </p>
                                     </td>
                                 </tr>
 
@@ -95,7 +113,9 @@ import DigiBackButton from '@/components/DigiBackButton.vue'
                                 <tr class="">
                                     <td>
                                         <p class="font-noto-sans-bold">Wakil Ketua</p>
-                                        <p class="font-noto-sans-regular"> - </p>
+                                        <p class="font-noto-sans-regular">
+                                            {{ kep?.anggota?.find(a => a.role.id === 15)?.nama || '-' }}
+                                        </p>
                                     </td>
                                 </tr>
 
@@ -103,7 +123,9 @@ import DigiBackButton from '@/components/DigiBackButton.vue'
                                 <tr class="">
                                     <td>
                                         <p class="font-noto-sans-bold">Seketaris</p>
-                                        <p class="font-noto-sans-regular">Ns. Meulu Primananda, S.Kep</p>
+                                        <p class="font-noto-sans-regular">
+                                            {{ kep?.anggota?.find(a => a.role.id === 12)?.nama || '-' }}
+                                        </p>
                                     </td>
                                 </tr>
 
@@ -112,16 +134,9 @@ import DigiBackButton from '@/components/DigiBackButton.vue'
                                     <td>
                                         <p class="font-noto-sans-bold">Anggota</p>
                                         <ol class="font-noto-sans-regular">
-                                            <li>Ns. Bahreni Yusuf, S.Kep., M.Kep., SP.Kep.MB</li>
-                                            <li>Ns. Lilis Kamilah, S.Kep., M.Kep</li>
-                                            <li>Ns. Rahayu Maharani, M.Kep</li>
-                                            <li>Ns. Reni, M.Kep</li>
-                                            <li>Ns. Septirina Rahayu, M.Kep, Sp.Kep.J</li>
-                                            <li>Ns. Teti Hayati, M.M., M.Kep</li>
-                                            <li>Bdn. Dina Raidanti, S.SiT., M.Kes</li>
-                                            <li>Bdn. Hesti Kusumaningrum</li>
-                                            <li>Tetty Oktavia Limbong, M.Tr.Keb</li>
-                                            <li>Bdn. Devi Yulianti, SST., M.Bmd</li>
+                                            <li v-for="(member, index) in kep?.anggota?.filter(a => a.role.id === 13)" :key="index">
+                                                {{ member.nama }}
+                                            </li>
                                         </ol>
                                     </td>
                                 </tr>
