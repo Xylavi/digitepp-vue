@@ -22,7 +22,7 @@ const routes = [
     {
         path: '/detail-kep/:id',
         name: 'detailKep',
-        component: DetailKep
+        component: DetailKep,
     },
     {
         path: '/detail-berita',

@@ -43,7 +43,7 @@ onMounted(async () => {
 
                 <div class="row row-cols-1 row-cols-lg-2 my-lg-5">
                     <div class="col">
-                        <img src="/images/kep-terdaftar/stikes.png" alt="stikes" style="width: 30vw;">
+                        <img :src="`https://digitepp.id${kep.file_logo}`" alt="stikes" style="width: 30vw;">
                         <h3 class="font-dm-serif-text-regular">{{ kep?.nama || '-' }}</h3>
                     </div>
 

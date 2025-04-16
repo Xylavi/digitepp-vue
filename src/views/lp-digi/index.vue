@@ -1,6 +1,19 @@
 <script setup>
-    import DigiFooter from '@/components/DigiFooter.vue';
-    import DigiNavbar from '@/components/DigiNavbar.vue';
+import { ref, onMounted } from 'vue';
+import axios from 'axios';
+import DigiFooter from '@/components/DigiFooter.vue';
+import DigiNavbar from '@/components/DigiNavbar.vue';
+
+const keps = ref([]);
+
+onMounted(async () => {
+    try {
+        const response = await axios.get(`http://127.0.0.1:8000/api/keps`);
+        keps.value = response.data.data;
+    } catch (error) {
+        console.error('Failed to fetch KEP data:', error);
+    }
+});
 </script>
 
 <template>
@@ -36,7 +49,7 @@
                         </div>
                     </div>
                     <div class="col-lg-7 order-1 order-lg-2">
-                        <img src="/images/dashboard.png" alt="Dashboard pengusul mobile view" class="img-fluid mt-5" />
+                        <img src="/images/dashboard.png" alt="Dashboard pengusul mobile view" class="img-fluid mt-5">
                     </div>
                 </div>
             </div>
@@ -198,280 +211,24 @@
                 <h2 class="font-dm-serif-text-regular">KEP Terdaftar</h2>
                 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 p-3 p-lg-5">
 
-                    <!-- CARD : RSUD Dr. Soedono -->
-                    <div class="col d-flex">
-                        <div
-                            class="card w-100 mb-4 border-3 border-primary-subtle rounded-4 d-flex justify-content-center">
-                            <div class="row m-3 g-0 align-items-center">
-                                <div class="col-md-4">
-                                    <img src="/images/kep-terdaftar/dr-soedono.png" class="border-0 kep-card-logo"
-                                        alt="RSUD dr. Soedono Madiun" />
-                                </div>
-                                <div class="col-md-8 text-start">
-                                    <div class="card-body">
-                                        <router-link
-                                            class="card-title font-noto-sans-bold digi-kep-card-font-bold text-decoration-none"
-                                            :to="{ name: 'detailKep' }">KEPK RSUD SAYANG CIANJUR
-                                        </router-link>
-                                        <p class="card-text font-noto-sans-regular digi-kep-card-font-regular">RSUD
-                                            SAYANG
-                                            CIANJUR
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- CARD : Universitas Satya -->
-                    <div class="col d-flex">
-                        <div
-                            class="card w-100 mb-4 border-3 border-primary-subtle rounded-4 d-flex justify-content-center">
-                            <div class="row m-3 g-0 align-items-center">
-                                <div class="col-md-4">
-                                    <img src="/images/kep-terdaftar/satya.png" class=" border-0 kep-card-logo"
-                                        alt="RSUD dr. Soedono Madiun" />
-                                </div>
-                                <div class="col-md-8 text-start">
-                                    <div class="card-body">
-                                        <router-link
-                                            class="card-title font-noto-sans-bold digi-kep-card-font-bold text-decoration-none"
-                                            :to="{ name: 'detailKep' }">KOMITE ETIK PENELITIAN UNIVERSITAS ICHSAN SATYA
-                                        </router-link>
-                                        <p class="card-text font-noto-sans-regular digi-kep-card-font-regular">
-                                            Universitas Ichsan Satya Tangerang Selatan
-                                        </p>
-                                        <span
-                                            class="badge text-white font-noto-sans-regular text-center digi-kep-card-sle digi-bg-color-orange rounded-5">
-                                            Belum bisa menerbitkan SLE
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- CARD : Universitas Islam -->
-                    <div class="col d-flex">
-                        <div
-                            class="card w-100 mb-4 border-3 border-primary-subtle rounded-4 d-flex justify-content-center">
-                            <div class="row m-3 g-0 align-items-center">
-                                <div class="col-md-4">
-                                    <img src="/images/kep-terdaftar/as-syafiah.png" class="border-0 kep-card-logo"
-                                        alt="RSUD dr. Soedono Madiun" />
-                                </div>
-                                <div class="col-md-8 text-start">
-                                    <div class="card-body">
-                                        <router-link
-                                            class="card-title font-noto-sans-bold digi-kep-card-font-bold text-decoration-none"
-                                            :to="{ name: 'detailKep' }">KEP FIKes Universitas Islam As-Syafi'iyah
-                                        </router-link>
-                                        <p class="card-text font-noto-sans-regular digi-kep-card-font-regular">
-                                            Universitas Islam As-Syafiiyah
-                                        </p>
-                                        <span
-                                            class="badge text-white font-noto-sans-regular text-center digi-kep-card-sle digi-bg-color-orange rounded-5">
-                                            Belum bisa menerbitkan SLE
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- CARD : RS Siti Hajar -->
-                    <div class="col d-flex">
-                        <div
-                            class="card w-100 mb-4 border-3 border-primary-subtle rounded-4 d-flex justify-content-center">
-                            <div class="row m-3 g-0 align-items-center">
-                                <div class="col-md-4">
-                                    <img src="/images/kep-terdaftar/siti-hajar.png" class="border-0 kep-card-logo"
-                                        alt="KEP RSI Siti Hajar Sidoarjo" />
-                                </div>
-                                <div class="col-md-8 text-start">
-                                    <div class="card-body">
-                                        <router-link
-                                            class="card-title font-noto-sans-bold digi-kep-card-font-bold text-decoration-none"
-                                            :to="{ name: 'detailKep' }">KEP RSI Siti Hajar Sidoarjo
-                                        </router-link>
-                                        <p class="card-text font-noto-sans-regular digi-kep-card-font-regular">
-                                            RSI Siti Hajar Sidoarjo
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- CARD : Universitas Darussalam Gontor -->
-                    <div class="col d-flex">
-                        <div
-                            class="card w-100 mb-4 border-3 border-primary-subtle rounded-4 d-flex justify-content-center">
-                            <div class="row m-3 g-0 align-items-center">
-                                <div class="col-md-4">
-                                    <img src="/images/kep-terdaftar/unida-gontor.png" class="border-0 kep-card-logo"
-                                        alt="Universitas Darussalam Gontor" />
-                                </div>
-                                <div class="col-md-8 text-start">
-                                    <div class="card-body">
-                                        <router-link
-                                            class="card-title font-noto-sans-bold digi-kep-card-font-bold text-decoration-none"
-                                            :to="{ name: 'detailKep' }">FK Universitas Darussalam Gontor
-                                        </router-link>
-                                        <p class="card-text font-noto-sans-regular digi-kep-card-font-regular">
-                                            Universitas Darussalam Gontor
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- CARD : STIKES RSPAD -->
-                    <div class="col d-flex">
-                        <div
-                            class="card w-100 mb-4 border-3 border-primary-subtle rounded-4 d-flex justify-content-center">
-                            <div class="row m-3 g-0 align-items-center">
-                                <div class="col-md-4">
-                                    <img src="/images/kep-terdaftar/stikes.png" class=" border-0 kep-card-logo"
-                                        alt="STIKES RSPAD Gatot Soebroto" />
-                                </div>
-                                <div class="col-md-8 text-start">
-                                    <div class="card-body">
-                                        <router-link
-                                            class="card-title font-noto-sans-bold digi-kep-card-font-bold text-decoration-none"
-                                            :to="{ name: 'detailKep' }">STIKes RSPAD Gatot Soebroto
-                                        </router-link>
-                                        <p class="card-text font-noto-sans-regular digi-kep-card-font-regular">
-                                            STIKES RSPAD Gatot Subroto
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- CARD : RS Soeharto -->
-                    <div class="col d-flex">
-                        <div
-                            class="card w-100 mb-4 border-3 border-primary-subtle rounded-4 d-flex justify-content-center">
-                            <div class="row m-3 g-0 align-items-center">
-                                <div class="col-md-4">
-                                    <img src="/images/kep-terdaftar/rs-soeharto.png" class="border-0 kep-card-logo"
-                                        alt="RS Soeharto" />
-                                </div>
-                                <div class="col-md-8 text-start">
-                                    <div class="card-body">
-                                        <router-link
-                                            class="card-title font-noto-sans-bold digi-kep-card-font-bold text-decoration-none"
-                                            :to="{ name: 'detailKep' }">CRU RS Soeharto Heerdjan
-                                        </router-link>
-                                        <p class="card-text font-noto-sans-regular digi-kep-card-font-regular">
-                                            Rumah Sakit Soeharto Heerdjan
-                                        </p>
-                                        <span
-                                            class="badge text-white font-noto-sans-regular text-center digi-kep-card-sle digi-bg-color-orange rounded-5">
-                                            Belum bisa menerbitkan SLE
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- CARD : UWN Palu -->
-                    <div class="col d-flex">
-                        <div
-                            class="card w-100 mb-4 border-3 border-primary-subtle rounded-4 d-flex justify-content-center">
-                            <div class="row m-3 g-0 align-items-center">
-                                <div class="col-md-4">
-                                    <img src="/images/kep-terdaftar/widya.png" class=" border-0 kep-card-logo"
-                                        alt="KEP Universitas Widya Nusantara" />
-                                </div>
-                                <div class="col-md-8 text-start">
-                                    <div class="card-body">
-                                        <router-link
-                                            class="card-title font-noto-sans-bold digi-kep-card-font-bold text-decoration-none"
-                                            :to="{ name: 'detailKep' }">KEP Universitas Widya Nusantara
-                                        </router-link>
-                                        <p class="card-text font-noto-sans-regular digi-kep-card-font-regular">
-                                            Universitas Widya Nusantara (UWN) Palu
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- CARD : UPN Veteran Jatim -->
-                    <div class="col d-flex">
-                        <div
-                            class="card w-100 mb-4 border-3 border-primary-subtle rounded-4 d-flex justify-content-center">
-                            <div class="row m-3 g-0 align-items-center">
-                                <div class="col-md-4">
-                                    <img src="/images/kep-terdaftar/upn-jatim.png" class="border-0 kep-card-logo"
-                                        alt="UPN Veteran Jatim" />
-                                </div>
-                                <div class="col-md-8 text-start">
-                                    <div class="card-body">
-                                        <router-link
-                                            class="card-title font-noto-sans-bold digi-kep-card-font-bold text-decoration-none"
-                                            :to="{ name: 'detailKep' }">UPN Veteran Jawa Timur
-                                        </router-link>
-                                        <p class="card-text font-noto-sans-regular digi-kep-card-font-regular">
-                                            UPN Veteran Jawa Timur
-                                        </p>
-                                        <span
-                                            class="badge text-white font-noto-sans-regular text-center digi-kep-card-sle digi-bg-color-orange rounded-5">
-                                            Belum bisa menerbitkan SLE
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- CARD : UNISBAR -->
-                    <div class="col d-flex">
-                        <div
-                            class="card w-100 mb-4 border-3 border-primary-subtle rounded-4 d-flex justify-content-center">
-                            <div class="row m-3 g-0 align-items-center">
-                                <div class="col-md-4">
-                                    <img src="/images/kep-terdaftar/unisbar.png" class=" border-0 kep-card-logo"
-                                        alt="Komite Etik UNISBAR" />
-                                </div>
-                                <div class="col-md-8 text-start">
-                                    <div class="card-body">
-                                        <router-link
-                                            class="card-title font-noto-sans-bold digi-kep-card-font-bold text-decoration-none"
-                                            :to="{ name: 'detailKep' }">Komite Etik UNISBAR
-                                        </router-link>
-                                        <p class="card-text font-noto-sans-regular digi-kep-card-font-regular">
-                                            Universitas Sumatera Barat (Unisbar)
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                     <!-- CARD : RSUD SAYANG CIANJUR -->
-                    <div class="col d-flex">
+                    <div class="col d-flex" v-for="kep in keps" :key="kep.id">
                         <div
                             class="card w-100 mb-4 border-3 border-primary-subtle rounded-4 d-flex justify-content-center">
                             <div class="row m-3 g-0 align-items-center">
                                 <div class="col-md-4">
-                                    <img src="/images/kep-terdaftar/sayang-cianjur.png" class="border-0 kep-card-logo"
+                                    <img :src="`https://digitepp.id${kep.file_logo}`" class="border-0 kep-card-logo"
                                         alt="RSUD Sayang Cianjur" />
                                 </div>
                                 <div class="col-md-8 text-start">
                                     <div class="card-body">
                                         <router-link
                                             class="card-title font-noto-sans-bold digi-kep-card-font-bold text-decoration-none"
-                                            :to="{ name: 'detailKep' }">KEPK RSUD SAYANG CIANJUR
+                                            :to="{ name: 'detailKep', params: { id: kep.id || null } }">
+                                            {{ kep.nama }}
                                         </router-link>
                                         <p class="card-text font-noto-sans-regular digi-kep-card-font-regular">
-                                            RSUD SAYANG CIANJUR
+                                            {{ kep?.lembaga?.nama || '-' }}
                                         </p>
                                     </div>
                                 </div>
