@@ -228,7 +228,7 @@ onMounted(async () => {
                                             {{ kep.nama }}
                                         </router-link>
                                         <p class="card-text font-noto-sans-regular digi-kep-card-font-regular">
-                                            {{ kep?.lembaga?.nama || '-' }}
+                                            {{ kep?.lembaga?.nama || null }}
                                         </p>
                                     </div>
                                 </div>
