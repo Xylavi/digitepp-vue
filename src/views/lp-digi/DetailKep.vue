@@ -45,10 +45,10 @@ onMounted(async () => {
                     <div class="col">
                         <img v-if="kep?.file_logo"
                             :src="`https://digitepp.id${kep.file_logo}`"
-                            alt="stikes"
+                            alt="Kep Logo"
                             style="width: 30vw;"
                         >
-                        <span v-else class="placeholder"></span>
+                        <span v-else class="placeholder-glow"></span>
                         <h3 class="font-dm-serif-text-regular">{{ kep?.nama || '-' }}</h3>
                     </div>
 
