@@ -1,24 +1,27 @@
 <script setup>
 import { onMounted, ref } from 'vue';
 import { useRoute } from 'vue-router'; 
-import axios from 'axios';
-
 import DigiFooter from '@/components/DigiFooter.vue';
 import DigiNavbar from '@/components/DigiNavbar.vue';
 import DigiBackButton from '@/components/DigiBackButton.vue';
+import { kepService } from '@/services/kepService';
 
 const kep = ref(null);
 const route = useRoute(); 
-const id = route.params.id; 
+const loading = ref(true);
+const error = ref(null);
 
 onMounted(async () => {
     try {
-        const response = await axios.get(`http://127.0.0.1:8000/api/kep/${id}`);
-        kep.value = response.data.data;
+        const response = await kepService.getKepById(route.params.id);
+        kep.value = response.data;
     } catch (error) {
-        console.error('Failed to fetch data:', error);
+        console.error('Failed to fetch data: ', error);
+        error.value = error.message;
+    } finally {
+        loading.value = false;
     }
-});
+})
 </script>
 
 
@@ -41,7 +44,17 @@ onMounted(async () => {
             <div class="container text-center">
                 <h2 class="font-dm-serif-text-regular py-3 my-3 py-lg-5">Detail KEP</h2>
 
-                <div class="row row-cols-1 row-cols-lg-2 my-lg-5">
+                <div v-if="loading" class="text-center">
+                    <div class="spinner-border" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                </div>
+
+                <div v-else-if="error" class="alert alert-danger" role="alert">
+                    {{ error }}
+                </div>
+
+                <div v-else class="row row-cols-1 row-cols-lg-2 my-lg-5">
                     <div class="col">
                         <img v-if="kep?.file_logo"
                             :src="`https://digitepp.id${kep.file_logo}`"

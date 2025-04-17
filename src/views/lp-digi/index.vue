@@ -1,19 +1,26 @@
 <script setup>
 import { ref, onMounted } from 'vue';
-import axios from 'axios';
 import DigiFooter from '@/components/DigiFooter.vue';
 import DigiNavbar from '@/components/DigiNavbar.vue';
+import { kepService } from '@/services/kepService';
 
 const keps = ref([]);
+const loading = ref(true);
+const error = ref(null);
+
 
 onMounted(async () => {
     try {
-        const response = await axios.get(`http://127.0.0.1:8000/api/keps`);
-        keps.value = response.data.data;
+        const response = await kepService.getAllkeps();
+        keps.value = response.data;
+        loading.value = false;
     } catch (error) {
-        console.error('Failed to fetch KEP data:', error);
+        console.error('Failed to fetch data: ', error);
+        error.value = error.message;
+    } finally {
+        loading.value = false;
     }
-});
+})
 </script>
 
 <template>
@@ -209,19 +216,28 @@ onMounted(async () => {
         <section class="py-5 bg-primary-subtle text-center">
             <div class="container-fluid">
                 <h2 class="font-dm-serif-text-regular">KEP Terdaftar</h2>
-                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 p-3 p-lg-5">
+
+                <div v-if="loading" class="text-center">
+                    <div class="spinning-border" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                </div>
+
+                <div v-else-if="error" class="alert alert-danger" role="alert">
+                    {{ error }}
+                </div>
+
+                <div v-else class="row row-cols-1 row-cols-md-2 row-cols-lg-3 p-3 p-lg-5">
 
                     <!-- CARD : RSUD SAYANG CIANJUR -->
                     <div class="col d-flex" v-for="kep in keps" :key="kep.id">
-                        <div
-                            class="card w-100 mb-4 border-3 border-primary-subtle rounded-4 d-flex justify-content-center">
+                        <div class="card w-100 mb-4 border-3 border-primary-subtle rounded-4 d-flex justify-content-center">
                             <div class="row m-3 g-0 align-items-center">
                                 <div class="col-md-4">
-                                    <img :src="`https://digitepp.id${kep.file_logo}`" class="border-0 kep-card-logo"
-                                        alt="RSUD Sayang Cianjur" />
+                                    <img :src="`https://digitepp.id${kep.file_logo}`" class="border-0 kep-card-logo" alt="RSUD Sayang Cianjur">
                                 </div>
                                 <div class="col-md-8 text-start">
-                                    <div class="card-body">
+                                    <div class="card-body text-center text-lg-start">
                                         <router-link
                                             class="card-title font-noto-sans-bold digi-kep-card-font-bold text-decoration-none"
                                             :to="{ name: 'detailKep', params: { id: kep.id || null } }">
@@ -238,8 +254,7 @@ onMounted(async () => {
 
                     <!-- CARD : Lihat Semua -->
                     <div class="col d-flex">
-                        <div
-                            class="card w-100 mb-4 border-3 border-primary-subtle rounded-4 d-flex justify-content-center align-items-center  bg-primary-subtle">
+                        <div class="card w-100 mb-4 border-3 border-primary-subtle rounded-4 d-flex justify-content-center align-items-center  bg-primary-subtle">
                             <div class="row m-3 g-0 align-items-center">
                                 <div class="col text-start">
                                     <div class="card-body  text-center font-dm-serif-text-regular">

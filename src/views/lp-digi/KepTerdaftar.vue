@@ -1,17 +1,23 @@
 <script setup>
 import { ref, onMounted } from 'vue';
-import axios from 'axios';
 import DigiFooter from '@/components/DigiFooter.vue';
 import DigiNavbar from '@/components/DigiNavbar.vue';
+import { kepService } from '@/services/kepService';
 
 const keps = ref([]);
+const loading = ref(true);
+const error = ref(null);
 
 onMounted(async () => {
     try {
-        const response = await axios.get(`http://127.0.0.1:8000/api/keps`);
-        keps.value = response.data.data;
+        const response = await kepService.getAllkeps();
+        keps.value = response.data;
+        loading.value = false;
     } catch (error) {
-        console.error('Failed to fetch KEP data:', error);
+        console.error('Failed to fetch data:', error);
+        error.value = error.message;
+    } finally {
+        loading.value = false;
     }
 });
 </script>
@@ -33,7 +39,18 @@ onMounted(async () => {
                 </router-link>
                 <div class="row row-cols-1 table-responsive text-center">
                     <h2 class="font-dm-serif-text-regular mb-5">KEP Terdaftar</h2>
-                    <table class="table mx-0 px-0 mx-lg-5 px-lg-5 table-white text-start">
+
+                    <div v-if="loading" class="text-center">
+                        <div class="spinner-border" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                    </div>
+
+                    <div v-else-if="error" class="alert alert-danger" role="alert">
+                        {{ error }}
+                    </div>
+
+                    <table v-else class="table mx-0 px-0 mx-lg-5 px-lg-5 table-white text-start">
                         <thead>
                             <tr>
                                 <th scope="col">No.</th>
